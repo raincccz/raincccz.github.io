@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Raincccz Blog">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Raincccz Blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Raincccz">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Raincccz Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Raincccz Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021-0129-hexo-study/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Raincccz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Raincccz Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-0129-hexo-study/" class="post-title-link" itemprop="url">hexo-study</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-01-29 21:29:04" itemprop="dateCreated datePublished" datetime="2021-01-29T21:29:04+08:00">2021-01-29</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021-0129-git/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Raincccz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Raincccz Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-0129-git/" class="post-title-link" itemprop="url">git常用命令介绍及TortoiseGit、VS中git的使用</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-01-29 15:30:32 / 修改时间：21:39:11" itemprop="dateCreated datePublished" datetime="2021-01-29T15:30:32+08:00">2021-01-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="git常用命令介绍及TortoiseGit、VS中git的使用"><a href="#git常用命令介绍及TortoiseGit、VS中git的使用" class="headerlink" title="git常用命令介绍及TortoiseGit、VS中git的使用"></a>git常用命令介绍及TortoiseGit、VS中git的使用</h1><p>标准用法请参考<a target="_blank" rel="noopener" href="https://git-scm.com/book/zh">git-scm</a>和man手册。本文记录笔者对git的一些理解，如有错误，欢迎指正。  </p>
+<p>引用内容已用markdown记号标出。版权所有，转载请注明出处。  </p>
+<p>First Edition：2021-01-27<br>第二次编辑：2021-01-29</p>
+<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>本文将介绍git的原理以及基本指令的使用，使读者理解git的工作方式。最后将介绍如何在TortoiseGit和Visual Studio使用git。</p>
+<h1 id="文中的记号约定"><a href="#文中的记号约定" class="headerlink" title="文中的记号约定"></a>文中的记号约定</h1><p><code>&lt;当前分支&gt;</code>：用尖括号包裹，需要被替换  </p>
+<p>引用内容</p>
+<blockquote>
+<p> 这是引用内容  </p>
+</blockquote>
+<h1 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h1><p>基于windows平台，命令行，TortoiseGit，Visual Studio中git的使用  </p>
+<h1 id="写作注意"><a href="#写作注意" class="headerlink" title="写作注意"></a>写作注意</h1><p>本文章使用markdown编辑器Typora完成。下面将介绍笔者遇到的一些问题。</p>
+<ol>
+<li>不同区块之间需要显式空行</li>
+<li>不要以html中的特殊记号开头，如”&lt;”，可能会出现排版故障等情况</li>
+<li>markdown段内换行兼容性不佳。避免使用段内换行。文章以段排版，段与段之间需要显示空行。</li>
+<li>无序列表、有序列表不需要考虑空行问题，系统自动处理。（可以这样理解，markdwon是一种轻量的标记语言，使用标记的目的是为了让软件处理，同时也使得源代码有一定的可读性。需要标记出当前内容的格式，如段内换行、换段、列表。具体的显示效果有css文件控制。</li>
+<li>图片路径约定，建立img文件夹保存图片，使用相对路径</li>
+</ol>
+<h1 id="git-指引"><a href="#git-指引" class="headerlink" title="git 指引"></a>git 指引</h1><p>学习过程中，先学习在命令行环境下使用git，理解基本原理。熟练后再使用gui工具。</p>
+<h1 id="git重要概念（可以先跳过本部分）"><a href="#git重要概念（可以先跳过本部分）" class="headerlink" title="git重要概念（可以先跳过本部分）"></a>git重要概念（可以先跳过本部分）</h1><p>更适合把git当作某种数据结构来理解，从底层理解git 。</p>
+<p>git分支并不是一个实体，而是一个指针，指向某个commit，不保存其他信息。</p>
+<p>HEAD表示当前指向的位置，maste一般用于主分支。不要混淆两者概念  </p>
+<p>三个抽象的工作区域</p>
+<ol>
+<li>Working-Tree</li>
+<li> Index</li>
+<li> Repo</li>
+</ol>
+<p>Working-Tree为工作目录，即为用户可以直接操作的文件。</p>
+<p>index，暂存区，也称stage（文件被git add之后，将blob object保存到./git/objects文件夹下，同时向index文件中写入相关信息。</p>
+<p>Repo，版本仓库（git commit后，index保存为tree object，并添加commit object）</p>
+<h1 id="git-指令"><a href="#git-指令" class="headerlink" title="git 指令"></a>git 指令</h1><p>将介绍常用指令（均需要掌握）</p>
+<p>学习指令时，要使用完整指令，不要依赖默认行为。要了解指令的具体效果</p>
+<h2 id="git基本命令"><a href="#git基本命令" class="headerlink" title="git基本命令"></a>git基本命令</h2><ol>
+<li>git add</li>
+<li>git commit</li>
+<li>git checkout</li>
+<li>git branch</li>
+<li>git switch </li>
+</ol>
+<h3 id="1-git-add"><a href="#1-git-add" class="headerlink" title="1.git add"></a>1.git add</h3><ul>
+<li><p>add 添加文件到index  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add <span class="keyword">new</span>.txt  </span><br></pre></td></tr></table></figure>
+<h3 id="2-git-commit"><a href="#2-git-commit" class="headerlink" title="2.git commit"></a>2.git commit</h3></li>
+<li><p>commit 将当前index提交到Local Repository  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git  commit  -m <span class="string">&quot;&lt;这里是commit的注释&gt;&quot;</span>  </span><br><span class="line">git  commit  -m <span class="string">&quot;&lt;这里是commit的注释&gt;&quot;</span> --allow-empty <span class="comment">//使用此命令学习git分支  </span></span><br><span class="line">git  commit  -m <span class="string">&quot;&lt;这里是commit的注释&gt;&quot;</span> --allow-empty-message -m <span class="string">&quot;&quot;</span> <span class="comment">//允许空注释  </span></span><br></pre></td></tr></table></figure>
+<p>git commit将当前index状态保存，即git commit不直接与工作目录交互</p>
+</li>
+</ul>
+<h3 id="3-git-checkout（checkout命令更接近底层）"><a href="#3-git-checkout（checkout命令更接近底层）" class="headerlink" title="3.git checkout（checkout命令更接近底层）"></a>3.git checkout（checkout命令更接近底层）</h3><ul>
+<li><p>checkout 修改HEAD指针 底层修改 ./git/HEAD  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout &lt;指定位置&gt; <span class="comment">//修改HEAD 指针到&lt;指定位置&gt;  </span></span><br></pre></td></tr></table></figure>
+<h3 id="4-git-branch"><a href="#4-git-branch" class="headerlink" title="4.git branch"></a>4.git branch</h3></li>
+<li><p>branch 创建分支  </p>
+</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git branch new_branch <span class="comment">//新建分支new_branch  </span></span><br><span class="line">git branch -a 显示所有分支</span><br><span class="line">git branch -r 查看远程分支名</span><br><span class="line">git branch --<span class="built_in">set</span>-upstream 本地分支名 &lt;远程主机名&gt;/&lt;远程分支名&gt; <span class="comment">//数据流向，从本地流向远程，从左向右</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+<h3 id="5-git-switch"><a href="#5-git-switch" class="headerlink" title="5.git switch"></a>5.git switch</h3><ul>
+<li>switch 修改HEAD指针，使其指向某个分支而不是某个结点  <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">switch</span> &lt;分支&gt; <span class="comment">//切换到某个分支  </span></span><br><span class="line"><span class="comment">//switch与checkout的区别：  </span></span><br><span class="line"><span class="comment">//checkout功能更加底层，修改HEAD指针的内容，使其指向branch或者commit  </span></span><br><span class="line"><span class="comment">//switch只能指向分支  </span></span><br></pre></td></tr></table></figure>
+
+
+
+
+</li>
+</ul>
+<h2 id="git进阶指令"><a href="#git进阶指令" class="headerlink" title="git进阶指令"></a>git进阶指令</h2><ol>
+<li>git merge</li>
+<li>git reset</li>
+<li>git revert</li>
+<li>git rebase  </li>
+<li>git cherry-pick  </li>
+<li>git stash</li>
+</ol>
+<h3 id="1-git-merge"><a href="#1-git-merge" class="headerlink" title="1.git merge"></a>1.git merge</h3><p>这里的操作会判断是否发生冲突</p>
+<blockquote>
+<p>完整内容请参考 <a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6">git-scm</a></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Commit1---Commit2</span><br><span class="line">       \--Commit3</span><br><span class="line">master-&gt;Commit1</span><br><span class="line">hotfix-&gt;Commit2</span><br><span class="line">issue-&gt;Commit3</span><br><span class="line">HEAD-&gt;master</span><br><span class="line"></span><br><span class="line">注：git中分支本质是指针，指针指向某个节点，这个节点及其所有的祖先节点构成了该分支内容。如C1&lt;-C2&lt;-C3（箭头方向与指针方向一致，这个表示法在其他位置还会用到）。master分支指向C2节点，C1与C2属于master分支，C3不属于master分支。不能认为与master分支上节点关联的内容就属于master分支（单向链表）</span><br><span class="line"></span><br><span class="line">git switch master</span><br><span class="line">&#x2F;&#x2F;将hotfix分支内容合并到master分支</span><br><span class="line"></span><br><span class="line">git merge hotfix &#x2F;&#x2F;快进（fast-forward）</span><br><span class="line">&#x2F;&#x2F;将issue分支内容合并到master分支</span><br><span class="line">git merge issue &#x2F;&#x2F;三方合并</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<p>当前工作再branch_master分支，此分支指向commitA，develop分支指向commitB,(AB字母仅供标识，没有其他含义）。使用指令<code>git merge develop</code>,创建一个新的commitC，commitC以commitA和commitB为父结点。再次强调，git的分支是一个指针，存放在./git/refs文件夹下。分支所包含的结点是以类似链表的方式的进行查找的，并不是线性记录在某个文件中。  </p>
+<p>merge的两种方式</p>
+<ul>
+<li>快进（fast forward）</li>
+<li>三方合并</li>
+</ul>
+<p>快进：简单的将指针向前推进，即只修改指针内容</p>
+<p>三方合并：</p>
+<blockquote>
+<p>Git 会使用两个分支的末端所指的快照（<code>C2 和 </code>C3<code>）以及这两个分支的公共祖先（</code>C1`），做一个简单的三方合并。</p>
+</blockquote>
+<p>三方合并过程不影响C2、C3，而是新建一个C4节点，C4节点的父节点为C2、C3。</p>
+<h3 id="2-git-reset"><a href="#2-git-reset" class="headerlink" title="2.git reset"></a>2.git reset</h3><ul>
+<li>reset 修改当前分支的指针 底层修改文件 ./git/refs/head/&lt;分支名&gt;  </li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git reset ad13f1 <span class="comment">//修改当前分支的指针  </span></span><br><span class="line"><span class="comment">//git reset与checkout的区别  </span></span><br><span class="line"><span class="comment">//git reset不修改HEAD指针，修改当前分支指向的commit  </span></span><br><span class="line"><span class="comment">//git checkout修改HEAD指针  </span></span><br></pre></td></tr></table></figure>
+<p>git中删除分支并不会直接删除commit object，不过分支指针丢失了，难以进行查找，并且git有gc垃圾回收机制，会清理悬挂对象。（git误操作后恢复数据原理，分支指针被清除，对象并未清除，而且在./git/logs文件夹内有日志。) git fsck 命令验证数据库中对象的连通性和有效性。  </p>
+<p>修改当前分支指向的结点（分支指针总是指向该分支的最后一个结点，或者说分支指针记录了该分支最后一个结点，checkout命令是移动HEAD指针）  </p>
+<p>当前master分支有commitA commitB commitC  </p>
+<p>git reset commitA后，如果没有分支线包含commitB，commitC，那么B、C不会显示在git log中（因为git log是动态搜索），B、C可能会被清除。  </p>
+<p>注：git使用链接式的数据结构。 </p>
+<h3 id="3-git-revert（创建新节点）"><a href="#3-git-revert（创建新节点）" class="headerlink" title="3. git revert（创建新节点）"></a>3. git revert（创建新节点）</h3><p>当前master分支有commitA commitB commitC  </p>
+<p>使用git revert commitA命令生成commitD，commitD的父节点为commitC，commitD的内容与A一致，但并不破坏历史记录.  </p>
+<p>注：git对象是以链表的形式组织。链表上的结点不能自由移动，但可以对读取结点上的内容，创建新结点，这看起来像是回到了某次提交。  </p>
+<p>git cherry-pick命令  </p>
+<h3 id="4-git-rebase"><a href="#4-git-rebase" class="headerlink" title="4.git rebase"></a>4.git rebase</h3><p>这里的操作会判断是否发生冲突</p>
+<p>在git merge后，如果是三方合并，历史时间线中会显示分叉（如图）</p>
+<p><img src="/2021-0129-git/Snipaste_2021-01-29_17-43-24.png"></p>
+<p>这时可以使用rebase命令，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git rebase &lt;basebranch&gt; &lt;topicbranch&gt; 将topic分支的修改应用到base分支</span><br><span class="line">git rebase &lt;basebranch&gt; 将当前分支的修改应用到base分支上</span><br></pre></td></tr></table></figure>
+<p>注意：</p>
+<ol>
+<li>不要混淆topic分支和base分支</li>
+<li>应该在临时分支使用rebase命令，rebase master，将当前分支的内容应用到master分支上。</li>
+<li>这与merge命令的使用方式有所不同。在master分支上使用merge命令，在临时分支上使用rebase命令。（在当前分支使用的命令一般情况总是影响当前分支）</li>
+</ol>
+<h3 id="5-git-cherry-pick"><a href="#5-git-cherry-pick" class="headerlink" title="5.git cherry-pick"></a>5.git cherry-pick</h3><p>Apply the changes introduced by some existing commits 应用一些现有提交引入的更改</p>
+<p>merge rebase cherry-pick命令是基于修改，类似补丁的方式，并不是产生一份一模一样的副本。git并不会直接增量保存修改，而是产生独立的提交（具体请参考git内部原理分析），然后再不定期压缩数据库。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git cherry-pick &lt;commitHash&gt;</span><br><span class="line">git cherry-pick &lt;分支名&gt; &#x2F;&#x2F;相当于使用分支的最新提交</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+<h3 id="6-git-stash"><a href="#6-git-stash" class="headerlink" title="6.git stash"></a>6.git stash</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git stash list  </span><br><span class="line">git stash show  &lt;stash&gt;</span><br><span class="line">git stash drop  &lt;stash&gt;</span><br><span class="line">git stash push [-u|--include-untracked] [-a|--all] [-k|--[no-]keep-index]</span><br><span class="line">git stash ( pop | apply ) [--index] [-q|--quiet] &lt;stash&gt; [--index]</span><br><span class="line">git stash clear</span><br></pre></td></tr></table></figure>
+<p>-u|–include-untracked 包括未跟踪的文件</p>
+<h2 id="git-网络指令"><a href="#git-网络指令" class="headerlink" title="git 网络指令"></a>git 网络指令</h2><ol>
+<li><p>git clone</p>
+</li>
+<li><p>git fetch</p>
+</li>
+<li><p>git push</p>
+</li>
+<li><p>git pull</p>
+</li>
+<li><p>git remote</p>
+</li>
+</ol>
+<h3 id="1-git-clone"><a href="#1-git-clone" class="headerlink" title="1.git clone"></a>1.git clone</h3><p>git-clone-将存储库克隆到新目录。下载github仓库时，使用本命令</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://manpages.debian.org/stretch/git-man/git-clone.1.en.html">https://manpages.debian.org/stretch/git-man/git-clone.1.en.html</a></p>
+<p> <strong>DESCRIPTION</strong></p>
+<p>Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository (visible using <strong>git branch -r</strong>), and creates and checks out an initial branch that is forked from the cloned repository’s currently active branch.</p>
+</blockquote>
+<p>翻译：将存储库克隆到新创建的目录中，为克隆的存储库中的每个分支创建远程跟踪分支（使用<strong>git branch -r</strong>可见），并创建并签出从克隆的存储库当前活动分支派生的初始分支。</p>
+<h3 id="2-git-fetch"><a href="#2-git-fetch" class="headerlink" title="2.git fetch"></a>2.git fetch</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git fetch &lt;origin&lt;&#x2F;&lt;remote_branch&gt;</span><br><span class="line">&#x2F;&#x2F; &lt;origin&gt;为远程主机名 &lt;remote_branch&gt;为远程分支名</span><br></pre></td></tr></table></figure>
+<p>git fetch之后在本地创建远程分支指针</p>
+<p>注：这里的远程分支指针是存储在本地的一个文件，与远程仓库的分支不同。</p>
+<p>具体原理请参考git内部原理分析</p>
+<h3 id="3-git-push"><a href="#3-git-push" class="headerlink" title="3.git push"></a>3.git push</h3><p>git push 远程主机名 本地分支名:远程分支名</p>
+<p>（最开始学习时，尽量不要使用简写）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git push &lt;远程主机名origin&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt; &#x2F;&#x2F;origin是远程主机名，不要混淆远程主机名与远程分支名</span><br><span class="line">git push origin &#x2F;&#x2F;在有绑定关系时，可省略分支名，Git现在默认推送当前分支</span><br><span class="line">git push 如果只有一个远程主机，那么主机名也可以省略</span><br><span class="line">git push -u 指定默认主机</span><br><span class="line">git branch -</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="4-git-pull"><a href="#4-git-pull" class="headerlink" title="4.git pull"></a>4.git pull</h3><p><strong>git pull</strong> 命令用于从远程获取代码并合并本地的版本。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull &lt;远程主机名origin&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</span><br></pre></td></tr></table></figure>
+
+
+<p>注意</p>
+<ol>
+<li>不要混淆pull与push指令，push意为推送，pull意为拉取。</li>
+<li>不建议使用git pull指令。应用git fetch与git merge指令替代</li>
+<li>git push git pull指令中  分支流向为从左向右，左边分支数据流向右边分支</li>
+</ol>
+<h3 id="5-git-remote"><a href="#5-git-remote" class="headerlink" title="5.git remote"></a>5.git remote</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote -v &#x2F;&#x2F;显示本地关联的远程仓库</span><br><span class="line">git remote add &lt;shortname&gt; &lt;url&gt; &#x2F;&#x2F;shortname记为origin</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="git代码区域"><a href="#git代码区域" class="headerlink" title="git代码区域"></a>git代码区域</h1><p>这几个区域是使用概念上的区别，实际存储并不完全独立。</p>
+<ol>
+<li>Working-Tree</li>
+<li>Index</li>
+<li>Local Repo</li>
+<li>Remote Repo</li>
+</ol>
+<p>注意</p>
+<ol>
+<li><p>Working-Tree 即工作文件夹  </p>
+</li>
+<li><p>index index区内容，注意这里不是空的，使用git add <file1>命令，将file1添加到object和index内。<br>git commit区域 git commit将index内容打包到tree obejct，建立commit object，修改当前分支的指针，在logs文件夹内写入HEAD和当前分支的变更日志。  </p>
+</li>
+<li><p>在git中，数据存放在以sha1为键名的数据库中，以链表方式组织数据。这样数据更加灵活。  </p>
+</li>
+<li><p>git reflog是保存到本地的，不保存到远程。git log是动态计算的  </p>
+</li>
+</ol>
+<p>git对象 </p>
+<ol>
+<li>blob </li>
+<li>tree </li>
+<li>commit  </li>
+</ol>
+<p>git引用 </p>
+<ol>
+<li>分支引用 </li>
+<li>HEAD引用</li>
+<li> 标签引用</li>
+<li> 远程引用  </li>
+</ol>
+<p>git本地的远程分支也仅保存指针，不保存数据。数据保存在object中。远程分支标记了commit object。（由于sha1的特点，一般地，不同的文件不会具有相同的sha1）  </p>
+<p><img src="/2021-0129-git/1.jpg" alt="在这里插入图片描述"> </p>
+<p>Git分支与数据不直接关联。  数据中文件内容和文件元信息不直接关联。  commit不和文件直接关联。  远程分支建立在本地objects上，而不是简单粗暴地下载远程文件与本地文件比对。  git fetch操作是下载远程分支所关联地object（如果有某个结点有两个父节点，那么这两个方向的结点都会被下载），然后下载远程分支指针。 </p>
+<p>git是以节点链表为核心，不是以孤立的分支为核心。  git保证了与分支所关联的commit可以被安全保存。  patch分支修改了某项功能，随后在master分支上merge patch分支，删除patch分支。这三个节点都得到了保留。  </p>
+<h1 id="git常用的底层命令"><a href="#git常用的底层命令" class="headerlink" title="git常用的底层命令"></a>git常用的底层命令</h1><ol>
+<li>git hash-object 写入object  </li>
+<li>git write-tree 将index内容写入一个树对象  </li>
+<li> git update-index 更新index  </li>
+<li> git cat-file [-p] [-t] [-s]（pretty-print type size 查看文件  ）</li>
+</ol>
+<h1 id="git-内部原理分析（参考git-scm）"><a href="#git-内部原理分析（参考git-scm）" class="headerlink" title="git 内部原理分析（参考git-scm）"></a>git 内部原理分析（参考git-scm）</h1><blockquote>
+<p><a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-%E5%BA%95%E5%B1%82%E5%91%BD%E4%BB%A4%E4%B8%8E%E4%B8%8A%E5%B1%82%E5%91%BD%E4%BB%A4">https://git-scm.com/book/zh/v2/Git-内部原理-底层命令与上层命令</a>  </p>
+</blockquote>
+<h2 id="1-git命令"><a href="#1-git命令" class="headerlink" title="1. git命令"></a>1. git命令</h2><p>分为底层命令（plumbing），上层命令（porcelain）  </p>
+<h2 id="2-git文件目录"><a href="#2-git文件目录" class="headerlink" title="2. git文件目录"></a>2. git文件目录</h2><blockquote>
+<p>（注意，info/ 表示文件夹  HEAD 表示文件。根据末尾的/来区分文件和文件夹）<br><strong>config</strong>（config 文件包含项目特有的配置选项）<br><strong>description</strong>（仅供 GitWeb 程序使用）<br><strong>HEAD</strong>（HEAD指针，指向目前被检出的分支<br><strong>hooks</strong>/（包含客户端或服务端的钩子脚本）<br><strong>info/**（目录包含一个全局性排除（global exclude）文件， 用以放置那些不希望被记录在 .gitignore 文件中的忽略模式（ignored patterns）<br>**objects/**（目录存储所有数据内容）<br>**refs</strong>/（存储指向数据（分支、远程仓库和标签等）的提交对象的指针）<br><strong>index</strong>（文件保存暂存区信息）  </p>
+</blockquote>
+<h2 id="3-git对象"><a href="#3-git对象" class="headerlink" title="3. git对象"></a>3. git对象</h2><blockquote>
+<ul>
+<li>git对象（object）存放在./git/object/ 文件夹。以&lt;hash的前两位&gt;/&lt;hash的后38位&gt;的结构存储  </li>
+<li>对象分为 数据对象（blob object），树对象（tree object），提交对象（commit object）  </li>
+<li>数据对象仅保存了文件的内容，没有保存文件名。  <ul>
+<li>git cat-file -p &lt;指定的sha1&gt; 从Git中取回数据（-p 表示pretty-print 自动判断类型 -t表示查看object的类型  </li>
+<li>git hash-object -w test.txt 将test.txt写入Git  </li>
+</ul>
+</li>
+<li>树对象（tree object）  <ul>
+<li>树对象将文件组织到一起，一个树对象包含了一条或多条树对象记录。每条记录含有一个指向数据对象或者子树对象的 SHA-1 指针，以及相应的模式、类型、文件名信息    * Git 根据某一时刻暂存区（ index 区域，也称为stage区域，使用git<br>add命令后文件被添加到这里）所表示的状态创建并记录一个对应的树对象。   * 底层命令 git<br>update-index，必须为上述命令指定 –add  </li>
+</ul>
+</li>
+<li>文件模式为 100644，表明这是一个普通文件。 其他选择包括：100755，表示一个可执行文件； 120000，表示一个符号链接  </li>
+<li>git write-tree 命令将暂存区内容写入一个树对象  </li>
+<li>提交对象（commit object）  <ul>
+<li>调用 commit-tree 命令创建一个提交对象。为此需要指定一个树对象的 SHA-1 值，以及该提交的父提交对象（如果有的话）。  </li>
+<li><blockquote>
+<p>如果你做完了以上所有操作，那么现在就有了三个树对象，分别代表我们想要跟踪的不同项目快照。 然而问题依旧：若想重用这些快照，你必须记住所有三个 SHA-1 哈希值。<br>并且，你也完全不知道是谁保存了这些快照，在什么时刻保存的，以及为什么保存这些快照。 而以上这些，正是提交对象（commit<br>object）能为你保存的基本信息。  </p>
+</blockquote>
+</li>
+<li>提交对象 保存tree的sha1值，作者，保存时间，提交备注  </li>
+<li>提交对象类似于数据结构中链表的结点，保存自身信息和父节点的位置  </li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>总结  </p>
+<ol>
+<li>git blob object保存文件内容，tree object保存文件元信息以及目录信息，commit tree保存提交信息。  </li>
+<li>此时，通过object的sha1来查找object，未对object进行标注。  </li>
+</ol>
+<h2 id="4-git引用（references，简写为refs）"><a href="#4-git引用（references，简写为refs）" class="headerlink" title="4.git引用（references，简写为refs）"></a>4.git引用（references，简写为refs）</h2><p>笔者注：git引用可以理解为C语言的指针，指向某个地址。引用存放在.git/refs/heads/<br>对分支进行操作时就是在操作【references】<br>如果想更新某个引用，Git 提供了一个更加安全的命令 update-ref 来完成此事：<br> Git 分支的本质：一个指向某一系列提交之首的指针或引用。  </p>
+<h3 id="HEAD-引用"><a href="#HEAD-引用" class="headerlink" title="HEAD 引用"></a>HEAD 引用</h3><p>HEAD 文件通常是一个符号引用（symbolic reference），指向目前所在的分支。 所谓符号引用，表示它是一个指向其他引用的指针。  </p>
+<h3 id="标签引用"><a href="#标签引用" class="headerlink" title="标签引用"></a>标签引用</h3><blockquote>
+<p>然而实际上还有第四种。 标签对象（tag object） 非常类似于一个提交对象——它包含一个标签创建者信息、一个日期、一段注释信息，以及一个指针。 主要的区别在于，标签对象通常指向一个提交对象，而不是一个树对象。 它像是一个永不移动的分支引用——永远指向同一个提交对象，只不过给这个提交对象加上一个更友好的名字罢了。  </p>
+</blockquote>
+<h3 id="远程引用"><a href="#远程引用" class="headerlink" title="远程引用"></a>远程引用</h3><blockquote>
+<p>远程引用是只读的。 虽然可以 git checkout 到某个远程引用，但是 Git 并不会将 HEAD 引用指向该远程引用。因此，你永远不能通过 commit 命令来更新远程引用。 Git 将这些远程引用作为记录远程服务器上各分支最后已知位置状态的书签来管理。  </p>
+</blockquote>
+<p>git对象</p>
+<p>数据对象，树对象，提交对象</p>
+<p>分支，HEAD引用，TAG引用，remote引用。</p>
+<p>git中对象为基础，引用指向某些对象。</p>
+<h1 id="git底层实验"><a href="#git底层实验" class="headerlink" title="git底层实验"></a>git底层实验</h1><ol>
+<li>新建仓库  </li>
+</ol>
+<ul>
+<li>命令行中<code>git init </code>  </li>
+<li>TortoiseGit ,右键菜单Create repo  </li>
+<li>vs中 (待补充）  </li>
+</ul>
+<ol start="2">
+<li>创建文件  </li>
+</ol>
+<ul>
+<li>手动新建文件  </li>
+<li>或者 echo “&lt;字符&gt;” &gt;&gt; new.txt  </li>
+<li>或从 touch new.txt (windows下可能没有此命令）<br>打开文件，写入new conent并保存<br>注意：此时 ./.git/objects文件夹内并没有生成对应的文件<br><img src="/2021-0129-git/20210127195401920.png" alt="在这里插入图片描述">  </li>
+</ul>
+<ol start="3">
+<li>将文件添加到index <code>git add new.txt</code><br>注意./git/objects/文件夹内变化，增加了名为47的文件夹<br><img src="/2021-0129-git/20210127195343498.png" alt="在这里插入图片描述"><br>查看该文件夹的内容<br><img src="/2021-0129-git/20210127195519749.png" alt="在这里插入图片描述"><br>使用git底层命令查看该文件的内容<br><code>git cat-file -p 47d2739ba2c34690248c8f91b84bb54e8936899a</code><br><img src="/2021-0129-git/2021012719595181.png" alt="在这里插入图片描述"><br>使用同样的方法创建new.txt文件，并将其添加到index。在objects内生成了23/b6fc220420f74c5af7f34c106ef931a1fa15ea文件  </li>
+</ol>
+<p>注：47d2739ba2c34690248c8f91b84bb54e8936899a为内容的sha1，实际上objects文件夹为数据库，sha1与内容构成了键值对，按照&lt;前2位sha1&gt;/&lt;后38位sha1&gt;的方式存储。  </p>
+<p>注：将文件提交到index后，new.txt文件的内容已经被保存到了数据库中。即git add的作用并不是仅对文件做标记，而是将其内容保存到数据库中。可以将其分解为底层命令git hash-object，并未保存树对象<br>4.提交index到Local Repo  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;First Commit&quot;</span>  </span><br></pre></td></tr></table></figure>
+<p><img src="/2021-0129-git/20210127200438711.png" alt="在这里插入图片描述"><br>此时，查看objects文件夹的内容<br><img src="/2021-0129-git/2.jpg" alt="在这里插入图片描述"><br>新增了5d/ d4/文件夹<br>查看5d文件夹下新增文件的内容<br>使用<code>git cat-file -p &lt;sha1&gt;</code>指令查看新增objects的内容<br>使用<code>git cat-file -t</code><sha1> 指令查看新增objects的类型<br><img src="/2021-0129-git/20210127200959354.png" alt="在这里插入图片描述"><br>查看d4文件夹下新增文件的内容<br><img src="/2021-0129-git/3.jpg" alt="在这里插入图片描述"><br>查看refs/heads文件夹<br><img src="/2021-0129-git/20210127201353609.png" alt="在这里插入图片描述"><br>查看master文件的内容<br><img src="/2021-0129-git/20210127201415714.png" alt="在这里插入图片描述"><br>发现其内容与新增的commit object的sha1一致。  </p>
+<p>总结：使用git commit指令后 objects内新增两个文件，分别为tree object，commit object。refs/heads文件夹内分支指针内容被改写。  </p>
+<ol start="5">
+<li>查看当前HEAD指针的内容，HEAD指针指向了master分支<br>注：HEAD 与heads不同<br><img src="/2021-0129-git/20210127194030173.png" alt="在这里插入图片描述">  </li>
+<li>继续测试，使用<code>git commit --allow-empty -m &quot;empty commit&quot;</code>指令进行一次空提交<br>注：使用windows下软件everything 可以查看新增加的文件<br>以下文件的修改时间与刚才的操作时间匹配<br><img src="/2021-0129-git/202101272019081.png" alt="在这里插入图片描述"><br>分别为：  </li>
+</ol>
+<ul>
+<li>./refs/heads/master  </li>
+<li>/logs/refs/heads/master  </li>
+<li>/logs/HEAD  </li>
+<li>新增的object  </li>
+<li>COMMIT_EDITMSG （猜测，此文件可能供git comment –amend 选项使用）<br>查看master文件内容，发现其指向了新的commit object<br>logs文件夹内，有两个文件发生了变化<br>查看HEAD文件内容，记录了HEAD指针的变化，新记录增加到文件末尾。第一个sha1值表示父commit，第二个sha1表示当前的commit。第一次提交没有父commit，所以用全0的sha1值表示。<br><img src="/2021-0129-git/20210127204038682.png" alt="在这里插入图片描述"><br>查看master文件内容，记录了master指针的变化，新记录增加到文件末尾<br><img src="/2021-0129-git/20210127204103815.png" alt="在这里插入图片描述"><br>使用<code>git log</code>命令<br><img src="/2021-0129-git/6.jpg" alt="在这里插入图片描述"><br>其内容与logs内文件内容相似，不过最新的提交在顶部，从新到旧。<br>使用命令<code>git reflog</code><br><img src="/2021-0129-git/20210127204745793.png" alt="在这里插入图片描述"><br>记录了HEAD指针的变化。<br>注：HEAD@{N}表示HEAD之前的值  </li>
+</ul>
+<p>提问：logs记录的日志是否供git使用<br>验证：将logs文件夹移动其他位置，运行git log指令和git reflog指令<br>运行git log指令，变更内容仍可输出<br>运行git reflog指令，无内容输出。<br>将logs文件夹移回，git reflog命令可正常使用<br>总结：<code>git log</code>遍历objects来建立日志，<code>git reflog</code>查询.git/logs文件夹下内容  </p>
+<p>注：git中箭头含义，箭头表示指向该节点，不能把箭头当作时间方向  </p>
+<h1 id="命令行中Git介绍"><a href="#命令行中Git介绍" class="headerlink" title="命令行中Git介绍"></a>命令行中Git介绍</h1><p>拆分到另一篇文章中</p>
+<h1 id="TortoiseGit介绍"><a href="#TortoiseGit介绍" class="headerlink" title="TortoiseGit介绍"></a>TortoiseGit介绍</h1><p>拆分到另一篇文章中</p>
+<h1 id="Visual-Studio-中git的使用"><a href="#Visual-Studio-中git的使用" class="headerlink" title="Visual Studio 中git的使用"></a>Visual Studio 中git的使用</h1><p>拆分到另一篇文章中</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ol>
+<li><a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/">https://git-scm.com</a></li>
+<li><a target="_blank" rel="noopener" href="https://manpages.debian.org/stretch/git-man/git.1.en.html">https://manpages.debian.org/stretch/git-man/git.1.en.html</a></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Raincccz</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Raincccz</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
