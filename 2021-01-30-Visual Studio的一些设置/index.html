@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"raincccz.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="本文介绍一些VS中的常用功能及常用设置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Visual Studio的一些设置">
+<meta property="og:url" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/index.html">
+<meta property="og:site_name" content="Raincccz Blog">
+<meta property="og:description" content="本文介绍一些VS中的常用功能及常用设置">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130172825227.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130172951604.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173017878.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173231185.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173258572.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173100543.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173612479.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173727387.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173828496.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173949513.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130174114747.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130174642581.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130174605336.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130185257275.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130185311445.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130190114633.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130190200646.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130190251384.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130191029493.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130191100416.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130192345882.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130193412025.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130193010925.png">
+<meta property="article:published_time" content="2021-01-30T07:30:32.000Z">
+<meta property="article:modified_time" content="2021-01-30T12:42:18.255Z">
+<meta property="article:author" content="Raincccz">
+<meta property="article:tag" content="vs">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130172825227.png">
+
+<link rel="canonical" href="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Visual Studio的一些设置 | Raincccz Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Raincccz Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Raincccz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Raincccz Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Visual Studio的一些设置
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-01-30 15:30:32 / 修改时间：20:42:18" itemprop="dateCreated datePublished" datetime="2021-01-30T15:30:32+08:00">2021-01-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+            <div class="post-description">本文介绍一些VS中的常用功能及常用设置</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>类型：post<br>标题：Visual Studio的一些设置<br>日期：<br>描述：<br>标签：<br>分类：</p>
+<p>[toc]</p>
+<h1 id="vs解决方案、项目"><a href="#vs解决方案、项目" class="headerlink" title="vs解决方案、项目"></a>vs解决方案、项目</h1><blockquote>
+<p><a target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-cn/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2019">https://docs.microsoft.com/zh-cn/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2019</a></p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>项目包含在解决方案中。 尽管其名称如此，但解决方案并不是“答案”。 解决方案只是一个容器，用于包含一个或多个相关项目，以及生成信息、Visual Studio 窗口设置和不与特定项目关联的任何杂项文件。</p>
+</blockquote>
+<p>项目相当于工程文件夹</p>
+<h2 id="配置管理"><a href="#配置管理" class="headerlink" title="配置管理"></a>配置管理</h2><p>解决方案配置管理器</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130172825227.png" alt="image-20210130172825227"></p>
+<p>项目配置</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130172951604.png" alt="image-20210130172951604"></p>
+<h2 id="头文件、库文件配置"><a href="#头文件、库文件配置" class="headerlink" title="头文件、库文件配置"></a>头文件、库文件配置</h2><p>设置头文明、库文件位置</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173017878.png" alt="image-20210130173017878"></p>
+<p>附加包含目录（位于C/C++ -&gt;常规，C/C++选项用于修改编译器设置）</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173231185.png" alt="image-20210130173231185"></p>
+<p>附加库目录（位于链接器 -&gt;常规，用于修改链接器设置)</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173258572.png" alt="image-20210130173258572"></p>
+<p>注：VC++目录设置曾经是VS的全局设置，现在变为了单个项目的设置。附加包含目录设置作用于编译器参数，附加库目录作用于链接器参数。VC++目录影响当前项目的环境变量。在使用上。两者区别不大。</p>
+<p>添加附加依赖项，用于添加lib文件。</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173100543.png" alt="image-20210130173100543"></p>
+<h2 id="环境变量、预处理器设置"><a href="#环境变量、预处理器设置" class="headerlink" title="环境变量、预处理器设置"></a>环境变量、预处理器设置</h2><p>调试-&gt;环境，可以仅修改当前项目的环境变量，仅在当前项目中生效</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173612479.png" alt="image-20210130173612479"></p>
+<p>预处理器定义，对当前项目的所有文件均生效</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173727387.png" alt="image-20210130173727387"></p>
+<p>命令行，编译器的额外选项</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173828496.png" alt="image-20210130173828496"></p>
+<h2 id="子系统选项"><a href="#子系统选项" class="headerlink" title="子系统选项"></a>子系统选项</h2><p>子系统选项，在qt GUI编程时，设置为控制台，调试信息可以输出到控制台窗口。设置为窗口，将不显示控制台。</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173949513.png" alt="image-20210130173949513"></p>
+<h2 id="属性管理器"><a href="#属性管理器" class="headerlink" title="属性管理器"></a>属性管理器</h2><p>视图-&gt;其他窗口-&gt;属性管理器</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130174114747.png" alt="image-20210130174114747"></p>
+<p>当你需要配置环境时，可以通过项目属性表的方式配置，项目属性表可以被添加到多个项目中。（Release和Debug分开设置）</p>
+<h1 id="vs中的快捷键"><a href="#vs中的快捷键" class="headerlink" title="vs中的快捷键"></a>vs中的快捷键</h1><p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130174642581.png" alt="image-20210130174642581"></p>
+<p>可以在点击菜单栏中的按键，也可以使用相应的快捷键。</p>
+<p>高级，用来设置文本格式</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130174605336.png" alt="image-20210130174605336"></p>
+<p>高级，修改文本格式常用快捷键：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;C-K&gt;+&lt;C-C&gt;注释</span><br><span class="line">&lt;C-K&gt;+&lt;C-U&gt;取消注释</span><br><span class="line">&#x2F;&#x2F; &lt;C-A&gt;表示 control+A 同时按下</span><br><span class="line">可能因为VS中快捷键过多，需要前导快捷键。保持control按下，然后按一下第一个字母，再按一下第二个字母，松开control键。</span><br><span class="line"></span><br><span class="line">前导快捷键有&lt;C-K&gt;，&lt;C-R&gt;，&lt;C-0&gt;，&lt;C-M&gt;。&lt;C-K&gt;一般用在编辑文本快捷键之前，&lt;C-R&gt;一般用在 测试功能的快捷键之前,&lt;C-0&gt;一般用在团队功能之前,&lt;C-M&gt;用于大纲显示的相关设置。</span><br></pre></td></tr></table></figure>
+
+
+<blockquote>
+<p>可以 参考VSCode快捷键的分析和助记（Windows）<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/66826924">https://zhuanlan.zhihu.com/p/66826924</a></p>
+</blockquote>
+<p>Intellisense智能感知可以进行代码提示。如果要主动调出代码提示，使用以下快捷键：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;C-J&gt;或者&lt;A-右箭头&gt;  &#x2F;&#x2F;智能补全</span><br><span class="line">C+S+Space &#x2F;&#x2F;查看函数参数</span><br><span class="line">&lt;C-K&gt;+&lt;C-I&gt; &#x2F;&#x2F;查看具体信息</span><br><span class="line">&lt;C-K&gt;+&lt;C-S&gt; &#x2F;&#x2F;外侧代码片段</span><br><span class="line">&lt;C-K&gt;+&lt;C-X&gt; &#x2F;&#x2F;代码片段</span><br></pre></td></tr></table></figure>
+<p>外侧代码片段与代码片段功能</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-cn/visualstudio/ide/code-snippets?view=vs-2019">https://docs.microsoft.com/zh-cn/visualstudio/ide/code-snippets?view=vs-2019</a></p>
+<p>代码片段是小块可重用代码，可通过右键单击菜单（关联菜单）命令或热键组合插入到代码文件中。 代码片段通常包含常用的代码块（如 <code>try-finally</code> 或 <code>if-else</code> 块），可用于插入整个类或方法。</p>
+</blockquote>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130185257275.png" alt="image-20210130185257275"></p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130185311445.png" alt="image-20210130185311445"></p>
+<p>可自动生成类及其构造函数和析构函数。</p>
+<p>外侧代码片段用来包裹代码，顾名思义，外侧代码。</p>
+<h1 id="vs的重构功能"><a href="#vs的重构功能" class="headerlink" title="vs的重构功能"></a>vs的重构功能</h1><p>&lt;C-.&gt;快捷键，快速操作和重构</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130190114633.png" alt="image-20210130190114633"></p>
+<p>重命名：对变量、函数等进行批量重命名</p>
+<p>速览定义：</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130190200646.png" alt="image-20210130190200646"></p>
+<p>调出一个临时窗口，查看定义</p>
+<p>转到定义：</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130190251384.png" alt="image-20210130190251384"></p>
+<p>打开一个新标签，查看定义</p>
+<p>转到声明：</p>
+<p>查找所有引用：显示解决方案中，该变量出现位置</p>
+<p>查看调用层次结构：函数调用关系</p>
+<p>速览头文件/代码文件</p>
+<p>转到头文件/代码文件</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130191029493.png" alt="image-20210130191029493"></p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130191100416.png" alt="image-20210130191100416"></p>
+<p>查看文件中函数、变量 结构</p>
+<blockquote>
+<p>vs中类型图标含义</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/zhjason/articles/14044190.html">https://www.cnblogs.com/zhjason/articles/14044190.html</a></p>
+</blockquote>
+<h1 id="Visual-Studio中已更改行的颜色"><a href="#Visual-Studio中已更改行的颜色" class="headerlink" title="Visual Studio中已更改行的颜色"></a>Visual Studio中已更改行的颜色</h1><p>左侧是当前页面，右侧是总页面</p>
+<blockquote>
+<p> <a target="_blank" rel="noopener" href="https://visualstudiomagazine.com/blogs/tool-tracker/2018/04/what-the-colors-mean.aspx">https://visualstudiomagazine.com/blogs/tool-tracker/2018/04/what-the-colors-mean.aspx</a></p>
+<p>Here’s your quick reference to the colors and icons in the editor window’s right-hand margin:</p>
+<ul>
+<li>Yellow: The line has been changed but not yet saved</li>
+<li>Green: The line has been changed and saved</li>
+<li>Orange: The line has been changed, saved, and the change undone</li>
+<li>Little square dots in the middle of the margin: Break points</li>
+<li>Little square dot on the right side of the margin: Syntax error</li>
+<li>Gray block: The portion of the file that’s currently being displayed</li>
+<li>Solid blue line: The current position of the cursor</li>
+<li>黄色：该行已更改，但尚未保存</li>
+<li>绿色：该行已更改并保存</li>
+<li>橙色：该行已被更改，保存，并且更改被撤消</li>
+<li>边距中间的小方形点：断点</li>
+<li>边距右侧的小方形点：语法错误</li>
+<li>灰色块：文件中当前显示的部分</li>
+<li>蓝色实线：光标的当前位置</li>
+</ul>
+</blockquote>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130192345882.png" alt="image-20210130192345882"></p>
+<p>右侧又分类三个部分。左边表示修改状态，中间是插入断点，右边是代码提示。</p>
+<p>横线表示当前代码位置</p>
+<h1 id="代码颜色"><a href="#代码颜色" class="headerlink" title="代码颜色"></a>代码颜色</h1><p>建议只使用一种代码高亮风格，并一直坚持下去。本人使用的是VS自带的深色主题，这样在不同的电脑上也能保持一致的编程习惯。</p>
+<p>我没有找到深色主题代码颜色的相关资料。</p>
+<p>下面，列举一部分常见的颜色含义：</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130193412025.png" alt="image-20210130193412025"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>海洋绿</td>
+<td>Ocean Green</td>
+<td>类</td>
+</tr>
+<tr>
+<td>蓝色</td>
+<td>Boston Blue</td>
+<td>类型</td>
+</tr>
+<tr>
+<td>树苗黄</td>
+<td>saplings</td>
+<td>类成员函数</td>
+</tr>
+<tr>
+<td>沙拉绿</td>
+<td>Fruit Salad</td>
+<td>注释</td>
+</tr>
+<tr>
+<td>天蓝色</td>
+<td></td>
+<td>局部变量</td>
+</tr>
+<tr>
+<td>白色</td>
+<td></td>
+<td>指针</td>
+</tr>
+<tr>
+<td>威士忌色</td>
+<td>Whiskey</td>
+<td>字符串</td>
+</tr>
+<tr>
+<td>紫罗兰色</td>
+<td>Violet Blue</td>
+<td>宏</td>
+</tr>
+</tbody></table>
+<h1 id="开发者命令行"><a href="#开发者命令行" class="headerlink" title="开发者命令行"></a>开发者命令行</h1><p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130193010925.png" alt="image-20210130193010925"></p>
+<p>一个是cmd，另一个是powershell。</p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Raincccz
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://raincccz.github.io/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/" title="Visual Studio的一些设置">https://raincccz.github.io/2021-01-30-Visual Studio的一些设置/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/vs/" rel="tag"># vs</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/" rel="prev" title="查询技术性资料的一些经验">
+      <i class="fa fa-chevron-left"></i> 查询技术性资料的一些经验
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vs%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E3%80%81%E9%A1%B9%E7%9B%AE"><span class="nav-number">1.</span> <span class="nav-text">vs解决方案、项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="nav-number">1.1.</span> <span class="nav-text">解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86"><span class="nav-number">1.2.</span> <span class="nav-text">配置管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%B4%E6%96%87%E4%BB%B6%E3%80%81%E5%BA%93%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">头文件、库文件配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E3%80%81%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.4.</span> <span class="nav-text">环境变量、预处理器设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%90%E7%B3%BB%E7%BB%9F%E9%80%89%E9%A1%B9"><span class="nav-number">1.5.</span> <span class="nav-text">子系统选项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E7%AE%A1%E7%90%86%E5%99%A8"><span class="nav-number">1.6.</span> <span class="nav-text">属性管理器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vs%E4%B8%AD%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">2.</span> <span class="nav-text">vs中的快捷键</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vs%E7%9A%84%E9%87%8D%E6%9E%84%E5%8A%9F%E8%83%BD"><span class="nav-number">3.</span> <span class="nav-text">vs的重构功能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Visual-Studio%E4%B8%AD%E5%B7%B2%E6%9B%B4%E6%94%B9%E8%A1%8C%E7%9A%84%E9%A2%9C%E8%89%B2"><span class="nav-number">4.</span> <span class="nav-text">Visual Studio中已更改行的颜色</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E9%A2%9C%E8%89%B2"><span class="nav-number">5.</span> <span class="nav-text">代码颜色</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E8%80%85%E5%91%BD%E4%BB%A4%E8%A1%8C"><span class="nav-number">6.</span> <span class="nav-text">开发者命令行</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Raincccz</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Raincccz</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">14k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">12 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

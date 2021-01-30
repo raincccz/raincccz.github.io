@@ -1,13 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo-study</title>
-    <url>//2021-0129-hexo-study/</url>
-    <content><![CDATA[]]></content>
+    <title>Visual Studio的一些设置</title>
+    <url>/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<p>类型：post<br>标题：Visual Studio的一些设置<br>日期：<br>描述：<br>标签：<br>分类：</p>
+<p>[toc]</p>
+<h1 id="vs解决方案、项目"><a href="#vs解决方案、项目" class="headerlink" title="vs解决方案、项目"></a>vs解决方案、项目</h1><blockquote>
+<p><a href="https://docs.microsoft.com/zh-cn/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2019">https://docs.microsoft.com/zh-cn/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2019</a></p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>项目包含在解决方案中。 尽管其名称如此，但解决方案并不是“答案”。 解决方案只是一个容器，用于包含一个或多个相关项目，以及生成信息、Visual Studio 窗口设置和不与特定项目关联的任何杂项文件。</p>
+</blockquote>
+<p>项目相当于工程文件夹</p>
+<h2 id="配置管理"><a href="#配置管理" class="headerlink" title="配置管理"></a>配置管理</h2><p>解决方案配置管理器</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130172825227.png" alt="image-20210130172825227"></p>
+<p>项目配置</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130172951604.png" alt="image-20210130172951604"></p>
+<h2 id="头文件、库文件配置"><a href="#头文件、库文件配置" class="headerlink" title="头文件、库文件配置"></a>头文件、库文件配置</h2><p>设置头文明、库文件位置</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173017878.png" alt="image-20210130173017878"></p>
+<p>附加包含目录（位于C/C++ -&gt;常规，C/C++选项用于修改编译器设置）</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173231185.png" alt="image-20210130173231185"></p>
+<p>附加库目录（位于链接器 -&gt;常规，用于修改链接器设置)</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173258572.png" alt="image-20210130173258572"></p>
+<p>注：VC++目录设置曾经是VS的全局设置，现在变为了单个项目的设置。附加包含目录设置作用于编译器参数，附加库目录作用于链接器参数。VC++目录影响当前项目的环境变量。在使用上。两者区别不大。</p>
+<p>添加附加依赖项，用于添加lib文件。</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173100543.png" alt="image-20210130173100543"></p>
+<h2 id="环境变量、预处理器设置"><a href="#环境变量、预处理器设置" class="headerlink" title="环境变量、预处理器设置"></a>环境变量、预处理器设置</h2><p>调试-&gt;环境，可以仅修改当前项目的环境变量，仅在当前项目中生效</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173612479.png" alt="image-20210130173612479"></p>
+<p>预处理器定义，对当前项目的所有文件均生效</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173727387.png" alt="image-20210130173727387"></p>
+<p>命令行，编译器的额外选项</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173828496.png" alt="image-20210130173828496"></p>
+<h2 id="子系统选项"><a href="#子系统选项" class="headerlink" title="子系统选项"></a>子系统选项</h2><p>子系统选项，在qt GUI编程时，设置为控制台，调试信息可以输出到控制台窗口。设置为窗口，将不显示控制台。</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130173949513.png" alt="image-20210130173949513"></p>
+<h2 id="属性管理器"><a href="#属性管理器" class="headerlink" title="属性管理器"></a>属性管理器</h2><p>视图-&gt;其他窗口-&gt;属性管理器</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130174114747.png" alt="image-20210130174114747"></p>
+<p>当你需要配置环境时，可以通过项目属性表的方式配置，项目属性表可以被添加到多个项目中。（Release和Debug分开设置）</p>
+<h1 id="vs中的快捷键"><a href="#vs中的快捷键" class="headerlink" title="vs中的快捷键"></a>vs中的快捷键</h1><p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130174642581.png" alt="image-20210130174642581"></p>
+<p>可以在点击菜单栏中的按键，也可以使用相应的快捷键。</p>
+<p>高级，用来设置文本格式</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130174605336.png" alt="image-20210130174605336"></p>
+<p>高级，修改文本格式常用快捷键：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;C-K&gt;+&lt;C-C&gt;注释</span><br><span class="line">&lt;C-K&gt;+&lt;C-U&gt;取消注释</span><br><span class="line">&#x2F;&#x2F; &lt;C-A&gt;表示 control+A 同时按下</span><br><span class="line">可能因为VS中快捷键过多，需要前导快捷键。保持control按下，然后按一下第一个字母，再按一下第二个字母，松开control键。</span><br><span class="line"></span><br><span class="line">前导快捷键有&lt;C-K&gt;，&lt;C-R&gt;，&lt;C-0&gt;，&lt;C-M&gt;。&lt;C-K&gt;一般用在编辑文本快捷键之前，&lt;C-R&gt;一般用在 测试功能的快捷键之前,&lt;C-0&gt;一般用在团队功能之前,&lt;C-M&gt;用于大纲显示的相关设置。</span><br></pre></td></tr></table></figure>
+
+
+<blockquote>
+<p>可以 参考VSCode快捷键的分析和助记（Windows）<a href="https://zhuanlan.zhihu.com/p/66826924">https://zhuanlan.zhihu.com/p/66826924</a></p>
+</blockquote>
+<p>Intellisense智能感知可以进行代码提示。如果要主动调出代码提示，使用以下快捷键：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;C-J&gt;或者&lt;A-右箭头&gt;  &#x2F;&#x2F;智能补全</span><br><span class="line">C+S+Space &#x2F;&#x2F;查看函数参数</span><br><span class="line">&lt;C-K&gt;+&lt;C-I&gt; &#x2F;&#x2F;查看具体信息</span><br><span class="line">&lt;C-K&gt;+&lt;C-S&gt; &#x2F;&#x2F;外侧代码片段</span><br><span class="line">&lt;C-K&gt;+&lt;C-X&gt; &#x2F;&#x2F;代码片段</span><br></pre></td></tr></table></figure>
+<p>外侧代码片段与代码片段功能</p>
+<blockquote>
+<p><a href="https://docs.microsoft.com/zh-cn/visualstudio/ide/code-snippets?view=vs-2019">https://docs.microsoft.com/zh-cn/visualstudio/ide/code-snippets?view=vs-2019</a></p>
+<p>代码片段是小块可重用代码，可通过右键单击菜单（关联菜单）命令或热键组合插入到代码文件中。 代码片段通常包含常用的代码块（如 <code>try-finally</code> 或 <code>if-else</code> 块），可用于插入整个类或方法。</p>
+</blockquote>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130185257275.png" alt="image-20210130185257275"></p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130185311445.png" alt="image-20210130185311445"></p>
+<p>可自动生成类及其构造函数和析构函数。</p>
+<p>外侧代码片段用来包裹代码，顾名思义，外侧代码。</p>
+<h1 id="vs的重构功能"><a href="#vs的重构功能" class="headerlink" title="vs的重构功能"></a>vs的重构功能</h1><p>&lt;C-.&gt;快捷键，快速操作和重构</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130190114633.png" alt="image-20210130190114633"></p>
+<p>重命名：对变量、函数等进行批量重命名</p>
+<p>速览定义：</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130190200646.png" alt="image-20210130190200646"></p>
+<p>调出一个临时窗口，查看定义</p>
+<p>转到定义：</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130190251384.png" alt="image-20210130190251384"></p>
+<p>打开一个新标签，查看定义</p>
+<p>转到声明：</p>
+<p>查找所有引用：显示解决方案中，该变量出现位置</p>
+<p>查看调用层次结构：函数调用关系</p>
+<p>速览头文件/代码文件</p>
+<p>转到头文件/代码文件</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130191029493.png" alt="image-20210130191029493"></p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130191100416.png" alt="image-20210130191100416"></p>
+<p>查看文件中函数、变量 结构</p>
+<blockquote>
+<p>vs中类型图标含义</p>
+<p><a href="https://www.cnblogs.com/zhjason/articles/14044190.html">https://www.cnblogs.com/zhjason/articles/14044190.html</a></p>
+</blockquote>
+<h1 id="Visual-Studio中已更改行的颜色"><a href="#Visual-Studio中已更改行的颜色" class="headerlink" title="Visual Studio中已更改行的颜色"></a>Visual Studio中已更改行的颜色</h1><p>左侧是当前页面，右侧是总页面</p>
+<blockquote>
+<p> <a href="https://visualstudiomagazine.com/blogs/tool-tracker/2018/04/what-the-colors-mean.aspx">https://visualstudiomagazine.com/blogs/tool-tracker/2018/04/what-the-colors-mean.aspx</a></p>
+<p>Here’s your quick reference to the colors and icons in the editor window’s right-hand margin:</p>
+<ul>
+<li>Yellow: The line has been changed but not yet saved</li>
+<li>Green: The line has been changed and saved</li>
+<li>Orange: The line has been changed, saved, and the change undone</li>
+<li>Little square dots in the middle of the margin: Break points</li>
+<li>Little square dot on the right side of the margin: Syntax error</li>
+<li>Gray block: The portion of the file that’s currently being displayed</li>
+<li>Solid blue line: The current position of the cursor</li>
+<li>黄色：该行已更改，但尚未保存</li>
+<li>绿色：该行已更改并保存</li>
+<li>橙色：该行已被更改，保存，并且更改被撤消</li>
+<li>边距中间的小方形点：断点</li>
+<li>边距右侧的小方形点：语法错误</li>
+<li>灰色块：文件中当前显示的部分</li>
+<li>蓝色实线：光标的当前位置</li>
+</ul>
+</blockquote>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130192345882.png" alt="image-20210130192345882"></p>
+<p>右侧又分类三个部分。左边表示修改状态，中间是插入断点，右边是代码提示。</p>
+<p>横线表示当前代码位置</p>
+<h1 id="代码颜色"><a href="#代码颜色" class="headerlink" title="代码颜色"></a>代码颜色</h1><p>建议只使用一种代码高亮风格，并一直坚持下去。本人使用的是VS自带的深色主题，这样在不同的电脑上也能保持一致的编程习惯。</p>
+<p>我没有找到深色主题代码颜色的相关资料。</p>
+<p>下面，列举一部分常见的颜色含义：</p>
+<p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130193412025.png" alt="image-20210130193412025"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>海洋绿</td>
+<td>Ocean Green</td>
+<td>类</td>
+</tr>
+<tr>
+<td>蓝色</td>
+<td>Boston Blue</td>
+<td>类型</td>
+</tr>
+<tr>
+<td>树苗黄</td>
+<td>saplings</td>
+<td>类成员函数</td>
+</tr>
+<tr>
+<td>沙拉绿</td>
+<td>Fruit Salad</td>
+<td>注释</td>
+</tr>
+<tr>
+<td>天蓝色</td>
+<td></td>
+<td>局部变量</td>
+</tr>
+<tr>
+<td>白色</td>
+<td></td>
+<td>指针</td>
+</tr>
+<tr>
+<td>威士忌色</td>
+<td>Whiskey</td>
+<td>字符串</td>
+</tr>
+<tr>
+<td>紫罗兰色</td>
+<td>Violet Blue</td>
+<td>宏</td>
+</tr>
+</tbody></table>
+<h1 id="开发者命令行"><a href="#开发者命令行" class="headerlink" title="开发者命令行"></a>开发者命令行</h1><p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130193010925.png" alt="image-20210130193010925"></p>
+<p>一个是cmd，另一个是powershell。</p>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>vs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>查询技术性资料的一些经验</title>
+    <url>/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/</url>
+    <content><![CDATA[<p>标题：查询技术性资料的一些经验</p>
+<p>tags: opencv 搭建环境</p>
+<h2 id="个人查询文档的一些经验："><a href="#个人查询文档的一些经验：" class="headerlink" title="个人查询文档的一些经验："></a>个人查询文档的一些经验：</h2><p>文档类型主要有：</p>
+<ul>
+<li><p>官方参考文档</p>
+</li>
+<li><p>私人博客</p>
+</li>
+</ul>
+<p>官方参考文档具有权威性，内容及时更新，但内容往往过于专业，文章较冗长。</p>
+<p>私人博客内容比较精炼，通俗易懂，一般只涉及常用的知识，但内容不会及时更新，且可能会存在一些错误。</p>
+<p>总结：在初步学习时，可参考私人博客内容，遇到有争议性的问题时，查阅官方参考文档。</p>
+<h2 id="配置环境的一些经验"><a href="#配置环境的一些经验" class="headerlink" title="配置环境的一些经验"></a>配置环境的一些经验</h2><p>配置环境时，可能会参考官方参考文档或者参考私人博客。参考私人博客需要注意一下几点：</p>
+<ol>
+<li>注意博文的撰写时间，可能博文使用的软件版本是v2.9，当前最新版本是v3.1，主版本号发生变化，某些功能可能不兼容，导致搭建环境失败。</li>
+<li>一个搜索小技巧，使用百度搜索引擎时，单击搜索工具选项，可以设置检索的时间范围。</li>
+<li>配置环境时，要记录所使用软件的版本。在日后重新搭建环境时，记录搭建版本。</li>
+<li>参考官方文档也是一个不错的选择。有些情况下，官方文档在搜索引擎中的权重可能不高。这时，可直接打开所要安装软件的官方网站。</li>
+</ol>
+<p>如要配置opencv环境，可打开<a href="https://opencv.org/">https://opencv.org/</a></p>
+<p><img src="/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/image-20210130181327581.png" alt="image-20210130181327581"></p>
+<p>这是opencv的官网</p>
+<p><img src="/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/image-20210130181456550.png" alt="image-20210130181456550"></p>
+<p>在网站下方，可看到如下界面。</p>
+<ul>
+<li>Online documention（在开发时作为参考手册使用）</li>
+<li>Tutorials（入门时可以查看此文档）</li>
+<li>Wiki（位于github的wiki）</li>
+</ul>
+<p>要安装opencv，可以先打开Tutorials页面</p>
+<p><img src="/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/image-20210130183142836.png" alt="image-20210130183142836"></p>
+<p>这是Tutorials页面，在页面上方有版本选项卡</p>
+<p>点击Introduction to Opencv</p>
+<p><img src="/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/image-20210130183322428.png" alt="image-20210130183322428"></p>
+<p>可以看到，针对Linux，Windows，Java &amp; Android，均有安装教程，而且可以查看不同版本的教程。</p>
+]]></content>
   </entry>
   <entry>
     <title>git常用命令介绍及TortoiseGit、VS中git的使用</title>
-    <url>//2021-0129-git/</url>
+    <url>/2021-01-29-git/</url>
     <content><![CDATA[<h1 id="git常用命令介绍及TortoiseGit、VS中git的使用"><a href="#git常用命令介绍及TortoiseGit、VS中git的使用" class="headerlink" title="git常用命令介绍及TortoiseGit、VS中git的使用"></a>git常用命令介绍及TortoiseGit、VS中git的使用</h1><p>标准用法请参考<a href="https://git-scm.com/book/zh">git-scm</a>和man手册。本文记录笔者对git的一些理解，如有错误，欢迎指正。  </p>
 <p>引用内容已用markdown记号标出。版权所有，转载请注明出处。  </p>
 <p>First Edition：2021-01-27<br>第二次编辑：2021-01-29</p>
@@ -119,7 +318,7 @@
 <p>git cherry-pick命令  </p>
 <h3 id="4-git-rebase"><a href="#4-git-rebase" class="headerlink" title="4.git rebase"></a>4.git rebase</h3><p>这里的操作会判断是否发生冲突</p>
 <p>在git merge后，如果是三方合并，历史时间线中会显示分叉（如图）</p>
-<p><img src="/2021-0129-git/Snipaste_2021-01-29_17-43-24.png"></p>
+<p><img src="/2021-01-29-git/Snipaste_2021-01-29_17-43-24.png"></p>
 <p>这时可以使用rebase命令，</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase &lt;basebranch&gt; &lt;topicbranch&gt; 将topic分支的修改应用到base分支</span><br><span class="line">git rebase &lt;basebranch&gt; 将当前分支的修改应用到base分支上</span><br></pre></td></tr></table></figure>
 <p>注意：</p>
@@ -213,7 +412,7 @@
 <li> 远程引用  </li>
 </ol>
 <p>git本地的远程分支也仅保存指针，不保存数据。数据保存在object中。远程分支标记了commit object。（由于sha1的特点，一般地，不同的文件不会具有相同的sha1）  </p>
-<p><img src="/2021-0129-git/1.jpg" alt="在这里插入图片描述"> </p>
+<p><img src="/2021-01-29-git/1.jpg" alt="在这里插入图片描述"> </p>
 <p>Git分支与数据不直接关联。  数据中文件内容和文件元信息不直接关联。  commit不和文件直接关联。  远程分支建立在本地objects上，而不是简单粗暴地下载远程文件与本地文件比对。  git fetch操作是下载远程分支所关联地object（如果有某个结点有两个父节点，那么这两个方向的结点都会被下载），然后下载远程分支指针。 </p>
 <p>git是以节点链表为核心，不是以孤立的分支为核心。  git保证了与分支所关联的commit可以被安全保存。  patch分支修改了某项功能，随后在master分支上merge patch分支，删除patch分支。这三个节点都得到了保留。  </p>
 <h1 id="git常用的底层命令"><a href="#git常用的底层命令" class="headerlink" title="git常用的底层命令"></a>git常用的底层命令</h1><ol>
@@ -287,26 +486,26 @@
 <ul>
 <li>手动新建文件  </li>
 <li>或者 echo “&lt;字符&gt;” &gt;&gt; new.txt  </li>
-<li>或从 touch new.txt (windows下可能没有此命令）<br>打开文件，写入new conent并保存<br>注意：此时 ./.git/objects文件夹内并没有生成对应的文件<br><img src="/2021-0129-git/20210127195401920.png" alt="在这里插入图片描述">  </li>
+<li>或从 touch new.txt (windows下可能没有此命令）<br>打开文件，写入new conent并保存<br>注意：此时 ./.git/objects文件夹内并没有生成对应的文件<br><img src="/2021-01-29-git/20210127195401920.png" alt="在这里插入图片描述">  </li>
 </ul>
 <ol start="3">
-<li>将文件添加到index <code>git add new.txt</code><br>注意./git/objects/文件夹内变化，增加了名为47的文件夹<br><img src="/2021-0129-git/20210127195343498.png" alt="在这里插入图片描述"><br>查看该文件夹的内容<br><img src="/2021-0129-git/20210127195519749.png" alt="在这里插入图片描述"><br>使用git底层命令查看该文件的内容<br><code>git cat-file -p 47d2739ba2c34690248c8f91b84bb54e8936899a</code><br><img src="/2021-0129-git/2021012719595181.png" alt="在这里插入图片描述"><br>使用同样的方法创建new.txt文件，并将其添加到index。在objects内生成了23/b6fc220420f74c5af7f34c106ef931a1fa15ea文件  </li>
+<li>将文件添加到index <code>git add new.txt</code><br>注意./git/objects/文件夹内变化，增加了名为47的文件夹<br><img src="/2021-01-29-git/20210127195343498.png" alt="在这里插入图片描述"><br>查看该文件夹的内容<br><img src="/2021-01-29-git/20210127195519749.png" alt="在这里插入图片描述"><br>使用git底层命令查看该文件的内容<br><code>git cat-file -p 47d2739ba2c34690248c8f91b84bb54e8936899a</code><br><img src="/2021-01-29-git/2021012719595181.png" alt="在这里插入图片描述"><br>使用同样的方法创建new.txt文件，并将其添加到index。在objects内生成了23/b6fc220420f74c5af7f34c106ef931a1fa15ea文件  </li>
 </ol>
 <p>注：47d2739ba2c34690248c8f91b84bb54e8936899a为内容的sha1，实际上objects文件夹为数据库，sha1与内容构成了键值对，按照&lt;前2位sha1&gt;/&lt;后38位sha1&gt;的方式存储。  </p>
 <p>注：将文件提交到index后，new.txt文件的内容已经被保存到了数据库中。即git add的作用并不是仅对文件做标记，而是将其内容保存到数据库中。可以将其分解为底层命令git hash-object，并未保存树对象<br>4.提交index到Local Repo  </p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;First Commit&quot;</span>  </span><br></pre></td></tr></table></figure>
-<p><img src="/2021-0129-git/20210127200438711.png" alt="在这里插入图片描述"><br>此时，查看objects文件夹的内容<br><img src="/2021-0129-git/2.jpg" alt="在这里插入图片描述"><br>新增了5d/ d4/文件夹<br>查看5d文件夹下新增文件的内容<br>使用<code>git cat-file -p &lt;sha1&gt;</code>指令查看新增objects的内容<br>使用<code>git cat-file -t</code><sha1> 指令查看新增objects的类型<br><img src="/2021-0129-git/20210127200959354.png" alt="在这里插入图片描述"><br>查看d4文件夹下新增文件的内容<br><img src="/2021-0129-git/3.jpg" alt="在这里插入图片描述"><br>查看refs/heads文件夹<br><img src="/2021-0129-git/20210127201353609.png" alt="在这里插入图片描述"><br>查看master文件的内容<br><img src="/2021-0129-git/20210127201415714.png" alt="在这里插入图片描述"><br>发现其内容与新增的commit object的sha1一致。  </p>
+<p><img src="/2021-01-29-git/20210127200438711.png" alt="在这里插入图片描述"><br>此时，查看objects文件夹的内容<br><img src="/2021-01-29-git/2.jpg" alt="在这里插入图片描述"><br>新增了5d/ d4/文件夹<br>查看5d文件夹下新增文件的内容<br>使用<code>git cat-file -p &lt;sha1&gt;</code>指令查看新增objects的内容<br>使用<code>git cat-file -t</code><sha1> 指令查看新增objects的类型<br><img src="/2021-01-29-git/20210127200959354.png" alt="在这里插入图片描述"><br>查看d4文件夹下新增文件的内容<br><img src="/2021-01-29-git/3.jpg" alt="在这里插入图片描述"><br>查看refs/heads文件夹<br><img src="/2021-01-29-git/20210127201353609.png" alt="在这里插入图片描述"><br>查看master文件的内容<br><img src="/2021-01-29-git/20210127201415714.png" alt="在这里插入图片描述"><br>发现其内容与新增的commit object的sha1一致。  </p>
 <p>总结：使用git commit指令后 objects内新增两个文件，分别为tree object，commit object。refs/heads文件夹内分支指针内容被改写。  </p>
 <ol start="5">
-<li>查看当前HEAD指针的内容，HEAD指针指向了master分支<br>注：HEAD 与heads不同<br><img src="/2021-0129-git/20210127194030173.png" alt="在这里插入图片描述">  </li>
-<li>继续测试，使用<code>git commit --allow-empty -m &quot;empty commit&quot;</code>指令进行一次空提交<br>注：使用windows下软件everything 可以查看新增加的文件<br>以下文件的修改时间与刚才的操作时间匹配<br><img src="/2021-0129-git/202101272019081.png" alt="在这里插入图片描述"><br>分别为：  </li>
+<li>查看当前HEAD指针的内容，HEAD指针指向了master分支<br>注：HEAD 与heads不同<br><img src="/2021-01-29-git/20210127194030173.png" alt="在这里插入图片描述">  </li>
+<li>继续测试，使用<code>git commit --allow-empty -m &quot;empty commit&quot;</code>指令进行一次空提交<br>注：使用windows下软件everything 可以查看新增加的文件<br>以下文件的修改时间与刚才的操作时间匹配<br><img src="/2021-01-29-git/202101272019081.png" alt="在这里插入图片描述"><br>分别为：  </li>
 </ol>
 <ul>
 <li>./refs/heads/master  </li>
 <li>/logs/refs/heads/master  </li>
 <li>/logs/HEAD  </li>
 <li>新增的object  </li>
-<li>COMMIT_EDITMSG （猜测，此文件可能供git comment –amend 选项使用）<br>查看master文件内容，发现其指向了新的commit object<br>logs文件夹内，有两个文件发生了变化<br>查看HEAD文件内容，记录了HEAD指针的变化，新记录增加到文件末尾。第一个sha1值表示父commit，第二个sha1表示当前的commit。第一次提交没有父commit，所以用全0的sha1值表示。<br><img src="/2021-0129-git/20210127204038682.png" alt="在这里插入图片描述"><br>查看master文件内容，记录了master指针的变化，新记录增加到文件末尾<br><img src="/2021-0129-git/20210127204103815.png" alt="在这里插入图片描述"><br>使用<code>git log</code>命令<br><img src="/2021-0129-git/6.jpg" alt="在这里插入图片描述"><br>其内容与logs内文件内容相似，不过最新的提交在顶部，从新到旧。<br>使用命令<code>git reflog</code><br><img src="/2021-0129-git/20210127204745793.png" alt="在这里插入图片描述"><br>记录了HEAD指针的变化。<br>注：HEAD@{N}表示HEAD之前的值  </li>
+<li>COMMIT_EDITMSG （猜测，此文件可能供git comment –amend 选项使用）<br>查看master文件内容，发现其指向了新的commit object<br>logs文件夹内，有两个文件发生了变化<br>查看HEAD文件内容，记录了HEAD指针的变化，新记录增加到文件末尾。第一个sha1值表示父commit，第二个sha1表示当前的commit。第一次提交没有父commit，所以用全0的sha1值表示。<br><img src="/2021-01-29-git/20210127204038682.png" alt="在这里插入图片描述"><br>查看master文件内容，记录了master指针的变化，新记录增加到文件末尾<br><img src="/2021-01-29-git/20210127204103815.png" alt="在这里插入图片描述"><br>使用<code>git log</code>命令<br><img src="/2021-01-29-git/6.jpg" alt="在这里插入图片描述"><br>其内容与logs内文件内容相似，不过最新的提交在顶部，从新到旧。<br>使用命令<code>git reflog</code><br><img src="/2021-01-29-git/20210127204745793.png" alt="在这里插入图片描述"><br>记录了HEAD指针的变化。<br>注：HEAD@{N}表示HEAD之前的值  </li>
 </ul>
 <p>提问：logs记录的日志是否供git使用<br>验证：将logs文件夹移动其他位置，运行git log指令和git reflog指令<br>运行git log指令，变更内容仍可输出<br>运行git reflog指令，无内容输出。<br>将logs文件夹移回，git reflog命令可正常使用<br>总结：<code>git log</code>遍历objects来建立日志，<code>git reflog</code>查询.git/logs文件夹下内容  </p>
 <p>注：git中箭头含义，箭头表示指向该节点，不能把箭头当作时间方向  </p>
