@@ -22,24 +22,28 @@
     var CONFIG = {"hostname":"raincccz.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="官方参考文档具有权威性，内容及时更新，但内容往往过于专业，文章较冗长。私人博客内容比较精炼，通俗易懂，一般只涉及常用的知识，但内容不会及时更新，且可能会存在一些错误。在初步学习时，可参考私人博客内容，遇到有争议性的问题时，查阅官方参考文档。">
+  <meta name="description" content="如题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="查询技术性资料的一些经验">
-<meta property="og:url" content="https://raincccz.github.io/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/index.html">
+<meta property="og:title" content="命令行中git log图介绍">
+<meta property="og:url" content="https://raincccz.github.io/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/index.html">
 <meta property="og:site_name" content="Raincccz Blog">
-<meta property="og:description" content="官方参考文档具有权威性，内容及时更新，但内容往往过于专业，文章较冗长。私人博客内容比较精炼，通俗易懂，一般只涉及常用的知识，但内容不会及时更新，且可能会存在一些错误。在初步学习时，可参考私人博客内容，遇到有争议性的问题时，查阅官方参考文档。">
+<meta property="og:description" content="如题">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://raincccz.github.io/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/image-20210130181327581.png">
-<meta property="og:image" content="https://raincccz.github.io/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/image-20210130181456550.png">
-<meta property="og:image" content="https://raincccz.github.io/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/image-20210130183142836.png">
-<meta property="og:image" content="https://raincccz.github.io/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/image-20210130183322428.png">
-<meta property="article:published_time" content="2021-01-30T07:30:32.000Z">
-<meta property="article:modified_time" content="2021-01-30T13:25:44.425Z">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/Snipaste_2021-01-30_13-34-22.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130134246367.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130134823778.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130135129027.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130135445416.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130140224010.png">
+<meta property="og:image" content="https://raincccz.github.io/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130142953917.png">
+<meta property="article:published_time" content="2021-01-29T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-01-30T13:37:37.580Z">
 <meta property="article:author" content="Raincccz">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raincccz.github.io/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/image-20210130181327581.png">
+<meta name="twitter:image" content="https://raincccz.github.io/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/Snipaste_2021-01-30_13-34-22.png">
 
-<link rel="canonical" href="https://raincccz.github.io/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/">
+<link rel="canonical" href="https://raincccz.github.io/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/">
 
 
 <script id="page-configurations">
@@ -52,7 +56,7 @@
   };
 </script>
 
-  <title>查询技术性资料的一些经验 | Raincccz Blog</title>
+  <title>命令行中git log图介绍 | Raincccz Blog</title>
   
 
 
@@ -196,7 +200,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://raincccz.github.io/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/">
+    <link itemprop="mainEntityOfPage" href="https://raincccz.github.io/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -209,7 +213,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          查询技术性资料的一些经验
+          命令行中git log图介绍
         </h1>
 
         <div class="post-meta">
@@ -220,7 +224,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-01-30 15:30:32 / 修改时间：21:25:44" itemprop="dateCreated datePublished" datetime="2021-01-30T15:30:32+08:00">2021-01-30</time>
+              <time title="创建时间：2021-01-30 00:00:00 / 修改时间：21:37:37" itemprop="dateCreated datePublished" datetime="2021-01-30T00:00:00+08:00">2021-01-30</time>
             </span>
 
           <br>
@@ -229,7 +233,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>668</span>
+              <span>1.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -238,7 +242,7 @@
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               <span>1 分钟</span>
             </span>
-            <div class="post-description">官方参考文档具有权威性，内容及时更新，但内容往往过于专业，文章较冗长。私人博客内容比较精炼，通俗易懂，一般只涉及常用的知识，但内容不会及时更新，且可能会存在一些错误。在初步学习时，可参考私人博客内容，遇到有争议性的问题时，查阅官方参考文档。</div>
+            <div class="post-description">如题</div>
 
         </div>
       </header>
@@ -249,39 +253,36 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="个人查询文档的一些经验："><a href="#个人查询文档的一些经验：" class="headerlink" title="个人查询文档的一些经验："></a>个人查询文档的一些经验：</h2><p>文档类型主要有：</p>
-<ul>
-<li><p>官方参考文档</p>
-</li>
-<li><p>私人博客</p>
-</li>
-</ul>
-<p>官方参考文档具有权威性，内容及时更新，但内容往往过于专业，文章较冗长。</p>
-<p>私人博客内容比较精炼，通俗易懂，一般只涉及常用的知识，但内容不会及时更新，且可能会存在一些错误。</p>
-<p>总结：在初步学习时，可参考私人博客内容，遇到有争议性的问题时，查阅官方参考文档。</p>
-<h2 id="配置环境的一些经验"><a href="#配置环境的一些经验" class="headerlink" title="配置环境的一些经验"></a>配置环境的一些经验</h2><p>配置环境时，可能会参考官方参考文档或者参考私人博客。参考私人博客需要注意一下几点：</p>
-<ol>
-<li>注意博文的撰写时间，可能博文使用的软件版本是v2.9，当前最新版本是v3.1，主版本号发生变化，某些功能可能不兼容，导致搭建环境失败。</li>
-<li>一个搜索小技巧，使用百度搜索引擎时，单击搜索工具选项，可以设置检索的时间范围。</li>
-<li>配置环境时，要记录所使用软件的版本。在日后重新搭建环境时，记录搭建版本。</li>
-<li>参考官方文档也是一个不错的选择。有些情况下，官方文档在搜索引擎中的权重可能不高。这时，可直接打开所要安装软件的官方网站。</li>
-</ol>
-<p>如要配置opencv环境，可打开<a target="_blank" rel="noopener" href="https://opencv.org/">https://opencv.org/</a></p>
-<p><img src="/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/image-20210130181327581.png" alt="image-20210130181327581"></p>
-<p>这是opencv的官网</p>
-<p><img src="/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/image-20210130181456550.png" alt="image-20210130181456550"></p>
-<p>在网站下方，可看到如下界面。</p>
-<ul>
-<li>Online documention（在开发时作为参考手册使用）</li>
-<li>Tutorials（入门时可以查看此文档）</li>
-<li>Wiki（位于github的wiki）</li>
-</ul>
-<p>要安装opencv，可以先打开Tutorials页面</p>
-<p><img src="/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/image-20210130183142836.png" alt="image-20210130183142836"></p>
-<p>这是Tutorials页面，在页面上方有版本选项卡</p>
-<p>点击Introduction to Opencv</p>
-<p><img src="/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/image-20210130183322428.png" alt="image-20210130183322428"></p>
-<p>可以看到，针对Linux，Windows，Java &amp; Android，均有安装教程，而且可以查看不同版本的教程。</p>
+        <h1 id="命令行中git-log图介绍"><a href="#命令行中git-log图介绍" class="headerlink" title="命令行中git log图介绍"></a>命令行中git log图介绍</h1><p>写在前面：使用git时，一直看不懂log图，现在将从最基本的提交开始，了解git log图。本文内容十分基础</p>
+<h2 id="如何阅读git-log图（十分基础）"><a href="#如何阅读git-log图（十分基础）" class="headerlink" title="如何阅读git log图（十分基础）"></a>如何阅读git log图（十分基础）</h2><p>查看日志</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log --oneline --graph &#x2F;&#x2F;可以使用alias gl&#x3D;...</span><br></pre></td></tr></table></figure>
+
+
+<p>进行第一次提交，然后查看日志</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/Snipaste_2021-01-30_13-34-22.png"></p>
+<p>进行第二次提交</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130134246367.png" alt="image-20210130134246367"></p>
+<p>创建develop分支，进行一次提交</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130134823778.png" alt="image-20210130134823778"></p>
+<p>从图中可以看出，共有三次提交。最新的提交显示在最上方。在first commit后产生了分叉。（git本身并没有主次分支的区分，数据以object的方式保存，分支指针指向某个object）</p>
+<p>再进行多次提交</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130135129027.png" alt="image-20210130135129027"></p>
+<p>从图中可以看出，HEAD指向develop分支，develop有多次提交，这里“线性提交”没有使用竖线、斜线表示。</p>
+<p>创建new_branch分支，进行一次提交</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130135445416.png" alt="image-20210130135445416"></p>
+<p>从图中可以看出，HEAD指向new_branch分支，new_branch分支只有两次提交。一个星号表示一次提交，连线表示提交之间的关系，如果是“线性提交”，则省略连线。</p>
+<p>又对分支做了修改</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130140224010.png" alt="image-20210130140224010"></p>
+<p>连线颜色更换，在stack overflow上查询颜色更换的原因。</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/40675151/what-do-line-colors-in-git-log-graph-mean">https://stackoverflow.com/questions/40675151/what-do-line-colors-in-git-log-graph-mean</a></p>
+<p>The colors are merely meant to help you view the lines as distinct from other lines. To answer question #1, they are assigned not pseudo-randomly, but rather <em>sequentially</em>, each time <code>git log --graph</code> picks a new “column number”. Unfortunately there are two issues I know of. Both tie into your question #2.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">GIT_COLOR_RED,</span><br><span class="line">GIT_COLOR_GREEN,</span><br><span class="line">GIT_COLOR_YELLOW,</span><br><span class="line">GIT_COLOR_BLUE,</span><br><span class="line">GIT_COLOR_MAGENTA,</span><br><span class="line">GIT_COLOR_CYAN,</span><br><span class="line">GIT_COLOR_BOLD_RED,</span><br><span class="line">GIT_COLOR_BOLD_GREEN,</span><br><span class="line">GIT_COLOR_BOLD_YELLOW,</span><br><span class="line">GIT_COLOR_BOLD_BLUE,</span><br><span class="line">GIT_COLOR_BOLD_MAGENTA,</span><br><span class="line">GIT_COLOR_BOLD_CYAN,</span><br></pre></td></tr></table></figure>
+
+
+</blockquote>
+<p>连线颜色只是为了区分开不同线条，颜色按顺序分配。</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130142953917.png" alt="image-20210130142953917"></p>
 
     </div>
 
@@ -297,7 +298,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://raincccz.github.io/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/" title="查询技术性资料的一些经验">https://raincccz.github.io/2021-01-30-查询技术性资料的一些经验/</a>
+    <a href="https://raincccz.github.io/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/" title="命令行中git log图介绍">https://raincccz.github.io/2021-01-30-命令行中git介绍/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -326,6 +327,9 @@
 
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/git/" rel="tag"># git</a>
+          </div>
 
         
 
@@ -333,12 +337,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/" rel="prev" title="VS中git介绍">
-      <i class="fa fa-chevron-left"></i> VS中git介绍
+    <a href="/2021-01-29-git/" rel="prev" title="git常用命令介绍及TortoiseGit、VS中git的使用">
+      <i class="fa fa-chevron-left"></i> git常用命令介绍及TortoiseGit、VS中git的使用
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/" rel="next" title="Visual Studio的一些设置">
-      Visual Studio的一些设置 <i class="fa fa-chevron-right"></i>
+    <a href="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/" rel="next" title="TortoiseGit介绍">
+      TortoiseGit介绍 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -398,7 +402,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AA%E4%BA%BA%E6%9F%A5%E8%AF%A2%E6%96%87%E6%A1%A3%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">个人查询文档的一些经验：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C"><span class="nav-number">2.</span> <span class="nav-text">配置环境的一些经验</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit-log%E5%9B%BE%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">命令行中git log图介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BBgit-log%E5%9B%BE%EF%BC%88%E5%8D%81%E5%88%86%E5%9F%BA%E7%A1%80%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">如何阅读git log图（十分基础）</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
