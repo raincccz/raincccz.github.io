@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>VS中git介绍</title>
+    <url>/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h1 id="VS中git介绍"><a href="#VS中git介绍" class="headerlink" title="VS中git介绍"></a>VS中git介绍</h1><p>本文仅介绍基本使用方法，详尽内容请参考官方文档。</p>
+<h2 id="状态栏的中git"><a href="#状态栏的中git" class="headerlink" title="状态栏的中git"></a>状态栏的中git</h2><p>这是状态栏的选项卡，可快速查看分支状态。箭头图标表示本地仓库和远程仓库的差异，铅笔图标表示本地修改文件的数量。git图标表示git仓库名称。分叉图标表示当前分支的名称。</p>
+<p><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130154939843.png" alt="image-20210130154939843"></p>
+<p>在状态栏的选项卡中点击分支名称，切换分支。</p>
+<h2 id="打开资源管理器窗口"><a href="#打开资源管理器窗口" class="headerlink" title="打开资源管理器窗口"></a>打开资源管理器窗口</h2><p>视图-&gt;团队资源管理器 打开团队资源管理器窗口</p>
+<p><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130154850160.png" alt="image-20210130154850160"></p>
+<h2 id="团队资源管理器界面"><a href="#团队资源管理器界面" class="headerlink" title="团队资源管理器界面"></a>团队资源管理器界面</h2><p><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130154921109.png" alt="image-20210130154921109"></p>
+<ul>
+<li>更改<ul>
+<li><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130155653501.png" alt="image-20210130155653501"></li>
+</ul>
+</li>
+</ul>
+<p>更改数表示发生变动的文件，暂存更改表示文件发生变动后使用git add命令添加到了index（也称为stage、index，暂存区）</p>
+<p>储藏 git stash</p>
+<ul>
+<li>分支</li>
+<li><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130161948207.png" alt="image-20210130161948207"></li>
+<li>分支的右键菜单</li>
+</ul>
+<p><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130162002935.png" alt="image-20210130162002935"></p>
+<p>签出checkout，切换分支</p>
+<p>新建分支位置 git branch 基于当前commit，新建分支</p>
+<p>合并自 git merge</p>
+<p>变基到 git rebase</p>
+<p>重置 git revert [–mixed | – hard]  –hard选项会丢失当前的更改</p>
+<p>挑拣 git cherry-pick</p>
+<h2 id="历史记录页面"><a href="#历史记录页面" class="headerlink" title="历史记录页面"></a>历史记录页面</h2><p><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130163330434.png" alt="image-20210130163330434"></p>
+<p>仅显示当前分支</p>
+<p><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130163413867.png" alt="image-20210130163413867"></p>
+<p>在某个commit上，打开右键菜单，</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>TortoiseGit介绍</title>
+    <url>/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h1 id="TortoiseGit介绍"><a href="#TortoiseGit介绍" class="headerlink" title="TortoiseGit介绍"></a>TortoiseGit介绍</h1><p>本文内容非常基础，记录笔者学习过程。若要详尽学习TortoiseGit，请查看<a href="https://tortoisegit.org/docs/tortoisegit/">官方文档</a>。</p>
+<h2 id="学习指导"><a href="#学习指导" class="headerlink" title="学习指导"></a>学习指导</h2><p>要从底层理解Git工作原理，将高层指令细分了若干低层操作。Git指令过多，且指令效果复杂，如果把Git当作黑箱，则有些功能难以理解。从Git的基本工作原理入手 </p>
+<h2 id="基本窗口"><a href="#基本窗口" class="headerlink" title="基本窗口"></a>基本窗口</h2><ul>
+<li>log messages窗口（log）</li>
+<li>reflog窗口（reflog）</li>
+<li>browse references窗口（浏览引用，简单来说就是查看分支</li>
+<li>revision graph窗口（简单来说就是分支图</li>
+<li>repo browser窗口</li>
+<li>commit 窗口</li>
+<li>sync窗口</li>
+</ul>
+<h2 id="log-messages窗口"><a href="#log-messages窗口" class="headerlink" title="log messages窗口"></a>log messages窗口</h2><p>资源管理器右键菜单，show log。该窗口相当于git log命令（git log命令是从object中查找信息，git reflog命令是查找logs）</p>
+<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130144756637.png" alt="image-20210130144756637"></p>
+<p>点击左上角蓝色下划线区域，进入browse references窗口，切换分支</p>
+<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/20210127221613727.png" alt="在这里插入图片描述"><br>分别表示：文件修改 文件增加 文件删除 文件重命名  </p>
+<h3 id="log-graph讲解"><a href="#log-graph讲解" class="headerlink" title="log graph讲解"></a>log graph讲解</h3><p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130151517722.png" alt="image-20210130151517722"></p>
+<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130151744861.png" alt="image-20210130151744861"></p>
+<p>图中节点：方形，圆形（方形可能是表示发生了分叉。颜色：黑色，红色，绿色。不同颜色的节点连接线是过渡色。</p>
+<blockquote>
+<p>在stackoverflow查询 方形圆形含义</p>
+<p><a href="https://stackoverflow.com/questions/45880591/what-is-the-meaning-of-square-icons-on-branch-lines-in-tortoisegit-log-graph">https://stackoverflow.com/questions/45880591/what-is-the-meaning-of-square-icons-on-branch-lines-in-tortoisegit-log-graph</a></p>
+<p>In the graph line there are two types of shapes:</p>
+<p>The circles indicate normal commits w/o any branching.</p>
+<p>The squares indicate merges and branchings. In the first case these are merge commits (i.e., a commit with more than one parent) and in the latter case these are also normal commits. A square was chosen here to indicate that a branch goes off.</p>
+<p>The colors of the lines (and of the shapes) are just there to make the graph better readable (i.e., to see to which branch they belong) and are configurable: <a href="https://tortoisegit.org/docs/tortoisegit/tgit-dug-settings.html#tgit-dug-settings-colours3">https://tortoisegit.org/docs/tortoisegit/tgit-dug-settings.html#tgit-dug-settings-colours3</a></p>
+<p>圆圈表示没有任何分支的正常提交。</p>
+<p>正方形表示合并和分支。在第一种情况下，这些是合并提交（即，具有多个父项的提交），在后一种情况下，它们也是普通的提交。在这里选择一个正方形来表示分支断开。</p>
+</blockquote>
+<p>方形的含义</p>
+<ol>
+<li>合并提交，该节点具有多个父项。</li>
+<li>普通提交，但具有多个子项</li>
+</ol>
+<h2 id="Reflog窗口"><a href="#Reflog窗口" class="headerlink" title="Reflog窗口"></a>Reflog窗口</h2><p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130145538728.png" alt="image-20210130145538728"></p>
+<p>显示Ref日志</p>
+<h2 id="browse-references窗口"><a href="#browse-references窗口" class="headerlink" title="browse references窗口"></a>browse references窗口</h2><p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130145107546.png" alt="image-20210130145107546"></p>
+<p>注：HEAD与heads不同。</p>
+<p>下图为不同Ref</p>
+<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130145427299.png" alt="image-20210130145427299"></p>
+<h2 id="revision-graph窗口"><a href="#revision-graph窗口" class="headerlink" title="revision graph窗口"></a>revision graph窗口</h2><p>注：revision version两个单词不要混淆</p>
+<p>默认显示</p>
+<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130145910156.png" alt="image-20210130145910156"></p>
+<p>在view选项卡中选中</p>
+<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130145933808.png" alt="image-20210130145933808"></p>
+<p>这样更易于阅读</p>
+<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130150105708.png" alt="image-20210130150105708"></p>
+<p>黄色表示tag，绿色表示分支，红色表示HEAD所指向的分支，浅灰色表示commit（只显示了与与分支）。</p>
+<h2 id="repo-browser窗口"><a href="#repo-browser窗口" class="headerlink" title="repo browser窗口"></a>repo browser窗口</h2><p>直接在当前窗口查看不同commit的内容，不需要变动Working-Tree。</p>
+<h2 id="Commit-窗口"><a href="#Commit-窗口" class="headerlink" title="Commit 窗口"></a>Commit 窗口</h2><p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/8.jpg" alt="在这里插入图片描述"></p>
+<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/2021012721065440.png" alt="在这里插入图片描述">  </p>
+<p>这里ReCommit表示完成此次提交后不关闭当前窗口，可进行下一次提交。（与amend last commit不同）<br><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/20210127210814143.png" alt="在这里插入图片描述"><br>Set author<br>Set author date 在Message中添加作者和日期。<br>Amend Last Commit （git commit –amend 修改上次提交）  </p>
+]]></content>
+      <tags>
+        <tag>TortoiseGit</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Visual Studio的一些设置</title>
     <url>/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="vs解决方案、项目"><a href="#vs解决方案、项目" class="headerlink" title="vs解决方案、项目"></a>vs解决方案、项目</h1><blockquote>
@@ -160,6 +255,44 @@
       </categories>
       <tags>
         <tag>vs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>命令行中git log图介绍</title>
+    <url>/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h1 id="命令行中git-log图介绍"><a href="#命令行中git-log图介绍" class="headerlink" title="命令行中git log图介绍"></a>命令行中git log图介绍</h1><p>写在前面：使用git时，一直看不懂log图，现在将从最基本的提交开始，了解git log图。本文内容十分基础</p>
+<h2 id="如何阅读git-log图（十分基础）"><a href="#如何阅读git-log图（十分基础）" class="headerlink" title="如何阅读git log图（十分基础）"></a>如何阅读git log图（十分基础）</h2><p>查看日志</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git log --oneline --graph &#x2F;&#x2F;可以使用alias gl&#x3D;...</span><br></pre></td></tr></table></figure>
+
+
+<p>进行第一次提交，然后查看日志</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/Snipaste_2021-01-30_13-34-22.png"></p>
+<p>进行第二次提交</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130134246367.png" alt="image-20210130134246367"></p>
+<p>创建develop分支，进行一次提交</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130134823778.png" alt="image-20210130134823778"></p>
+<p>从图中可以看出，共有三次提交。最新的提交显示在最上方。在first commit后产生了分叉。（git本身并没有主次分支的区分，数据以object的方式保存，分支指针指向某个object）</p>
+<p>再进行多次提交</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130135129027.png" alt="image-20210130135129027"></p>
+<p>从图中可以看出，HEAD指向develop分支，develop有多次提交，这里“线性提交”没有使用竖线、斜线表示。</p>
+<p>创建new_branch分支，进行一次提交</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130135445416.png" alt="image-20210130135445416"></p>
+<p>从图中可以看出，HEAD指向new_branch分支，new_branch分支只有两次提交。一个星号表示一次提交，连线表示提交之间的关系，如果是“线性提交”，则省略连线。</p>
+<p>又对分支做了修改</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130140224010.png" alt="image-20210130140224010"></p>
+<p>连线颜色更换，在stack overflow上查询颜色更换的原因。</p>
+<blockquote>
+<p><a href="https://stackoverflow.com/questions/40675151/what-do-line-colors-in-git-log-graph-mean">https://stackoverflow.com/questions/40675151/what-do-line-colors-in-git-log-graph-mean</a></p>
+<p>The colors are merely meant to help you view the lines as distinct from other lines. To answer question #1, they are assigned not pseudo-randomly, but rather <em>sequentially</em>, each time <code>git log --graph</code> picks a new “column number”. Unfortunately there are two issues I know of. Both tie into your question #2.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">GIT_COLOR_RED,</span><br><span class="line">GIT_COLOR_GREEN,</span><br><span class="line">GIT_COLOR_YELLOW,</span><br><span class="line">GIT_COLOR_BLUE,</span><br><span class="line">GIT_COLOR_MAGENTA,</span><br><span class="line">GIT_COLOR_CYAN,</span><br><span class="line">GIT_COLOR_BOLD_RED,</span><br><span class="line">GIT_COLOR_BOLD_GREEN,</span><br><span class="line">GIT_COLOR_BOLD_YELLOW,</span><br><span class="line">GIT_COLOR_BOLD_BLUE,</span><br><span class="line">GIT_COLOR_BOLD_MAGENTA,</span><br><span class="line">GIT_COLOR_BOLD_CYAN,</span><br></pre></td></tr></table></figure>
+
+
+</blockquote>
+<p>连线颜色只是为了区分开不同线条，颜色按顺序分配。</p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130142953917.png" alt="image-20210130142953917"></p>
+]]></content>
+      <tags>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -516,139 +649,6 @@
       <categories>
         <category>git</category>
       </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VS中git介绍</title>
-    <url>/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<h1 id="VS中git介绍"><a href="#VS中git介绍" class="headerlink" title="VS中git介绍"></a>VS中git介绍</h1><p>本文仅介绍基本使用方法，详尽内容请参考官方文档。</p>
-<h2 id="状态栏的中git"><a href="#状态栏的中git" class="headerlink" title="状态栏的中git"></a>状态栏的中git</h2><p>这是状态栏的选项卡，可快速查看分支状态。箭头图标表示本地仓库和远程仓库的差异，铅笔图标表示本地修改文件的数量。git图标表示git仓库名称。分叉图标表示当前分支的名称。</p>
-<p><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130154939843.png" alt="image-20210130154939843"></p>
-<p>在状态栏的选项卡中点击分支名称，切换分支。</p>
-<h2 id="打开资源管理器窗口"><a href="#打开资源管理器窗口" class="headerlink" title="打开资源管理器窗口"></a>打开资源管理器窗口</h2><p>视图-&gt;团队资源管理器 打开团队资源管理器窗口</p>
-<p><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130154850160.png" alt="image-20210130154850160"></p>
-<h2 id="团队资源管理器界面"><a href="#团队资源管理器界面" class="headerlink" title="团队资源管理器界面"></a>团队资源管理器界面</h2><p><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130154921109.png" alt="image-20210130154921109"></p>
-<ul>
-<li>更改<ul>
-<li><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130155653501.png" alt="image-20210130155653501"></li>
-</ul>
-</li>
-</ul>
-<p>更改数表示发生变动的文件，暂存更改表示文件发生变动后使用git add命令添加到了index（也称为stage、index，暂存区）</p>
-<p>储藏 git stash</p>
-<ul>
-<li>分支</li>
-<li><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130161948207.png" alt="image-20210130161948207"></li>
-<li>分支的右键菜单</li>
-</ul>
-<p><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130162002935.png" alt="image-20210130162002935"></p>
-<p>签出checkout，切换分支</p>
-<p>新建分支位置 git branch 基于当前commit，新建分支</p>
-<p>合并自 git merge</p>
-<p>变基到 git rebase</p>
-<p>重置 git revert [–mixed | – hard]  –hard选项会丢失当前的更改</p>
-<p>挑拣 git cherry-pick</p>
-<h2 id="历史记录页面"><a href="#历史记录页面" class="headerlink" title="历史记录页面"></a>历史记录页面</h2><p><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130163330434.png" alt="image-20210130163330434"></p>
-<p>仅显示当前分支</p>
-<p><img src="/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130163413867.png" alt="image-20210130163413867"></p>
-<p>在某个commit上，打开右键菜单，</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>TortoiseGit介绍</title>
-    <url>/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<h1 id="TortoiseGit介绍"><a href="#TortoiseGit介绍" class="headerlink" title="TortoiseGit介绍"></a>TortoiseGit介绍</h1><p>本文内容非常基础，记录笔者学习过程。若要详尽学习TortoiseGit，请查看<a href="https://tortoisegit.org/docs/tortoisegit/">官方文档</a>。</p>
-<h2 id="学习指导"><a href="#学习指导" class="headerlink" title="学习指导"></a>学习指导</h2><p>要从底层理解Git工作原理，将高层指令细分了若干低层操作。Git指令过多，且指令效果复杂，如果把Git当作黑箱，则有些功能难以理解。从Git的基本工作原理入手 </p>
-<h2 id="基本窗口"><a href="#基本窗口" class="headerlink" title="基本窗口"></a>基本窗口</h2><ul>
-<li>log messages窗口（log）</li>
-<li>reflog窗口（reflog）</li>
-<li>browse references窗口（浏览引用，简单来说就是查看分支</li>
-<li>revision graph窗口（简单来说就是分支图</li>
-<li>repo browser窗口</li>
-<li>commit 窗口</li>
-<li>sync窗口</li>
-</ul>
-<h2 id="log-messages窗口"><a href="#log-messages窗口" class="headerlink" title="log messages窗口"></a>log messages窗口</h2><p>资源管理器右键菜单，show log。该窗口相当于git log命令（git log命令是从object中查找信息，git reflog命令是查找logs）</p>
-<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130144756637.png" alt="image-20210130144756637"></p>
-<p>点击左上角蓝色下划线区域，进入browse references窗口，切换分支</p>
-<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/20210127221613727.png" alt="在这里插入图片描述"><br>分别表示：文件修改 文件增加 文件删除 文件重命名  </p>
-<h3 id="log-graph讲解"><a href="#log-graph讲解" class="headerlink" title="log graph讲解"></a>log graph讲解</h3><p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130151517722.png" alt="image-20210130151517722"></p>
-<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130151744861.png" alt="image-20210130151744861"></p>
-<p>图中节点：方形，圆形（方形可能是表示发生了分叉。颜色：黑色，红色，绿色。不同颜色的节点连接线是过渡色。</p>
-<blockquote>
-<p>在stackoverflow查询 方形圆形含义</p>
-<p><a href="https://stackoverflow.com/questions/45880591/what-is-the-meaning-of-square-icons-on-branch-lines-in-tortoisegit-log-graph">https://stackoverflow.com/questions/45880591/what-is-the-meaning-of-square-icons-on-branch-lines-in-tortoisegit-log-graph</a></p>
-<p>In the graph line there are two types of shapes:</p>
-<p>The circles indicate normal commits w/o any branching.</p>
-<p>The squares indicate merges and branchings. In the first case these are merge commits (i.e., a commit with more than one parent) and in the latter case these are also normal commits. A square was chosen here to indicate that a branch goes off.</p>
-<p>The colors of the lines (and of the shapes) are just there to make the graph better readable (i.e., to see to which branch they belong) and are configurable: <a href="https://tortoisegit.org/docs/tortoisegit/tgit-dug-settings.html#tgit-dug-settings-colours3">https://tortoisegit.org/docs/tortoisegit/tgit-dug-settings.html#tgit-dug-settings-colours3</a></p>
-<p>圆圈表示没有任何分支的正常提交。</p>
-<p>正方形表示合并和分支。在第一种情况下，这些是合并提交（即，具有多个父项的提交），在后一种情况下，它们也是普通的提交。在这里选择一个正方形来表示分支断开。</p>
-</blockquote>
-<p>方形的含义</p>
-<ol>
-<li>合并提交，该节点具有多个父项。</li>
-<li>普通提交，但具有多个子项</li>
-</ol>
-<h2 id="Reflog窗口"><a href="#Reflog窗口" class="headerlink" title="Reflog窗口"></a>Reflog窗口</h2><p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130145538728.png" alt="image-20210130145538728"></p>
-<p>显示Ref日志</p>
-<h2 id="browse-references窗口"><a href="#browse-references窗口" class="headerlink" title="browse references窗口"></a>browse references窗口</h2><p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130145107546.png" alt="image-20210130145107546"></p>
-<p>注：HEAD与heads不同。</p>
-<p>下图为不同Ref</p>
-<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130145427299.png" alt="image-20210130145427299"></p>
-<h2 id="revision-graph窗口"><a href="#revision-graph窗口" class="headerlink" title="revision graph窗口"></a>revision graph窗口</h2><p>注：revision version两个单词不要混淆</p>
-<p>默认显示</p>
-<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130145910156.png" alt="image-20210130145910156"></p>
-<p>在view选项卡中选中</p>
-<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130145933808.png" alt="image-20210130145933808"></p>
-<p>这样更易于阅读</p>
-<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/image-20210130150105708.png" alt="image-20210130150105708"></p>
-<p>黄色表示tag，绿色表示分支，红色表示HEAD所指向的分支，浅灰色表示commit（只显示了与与分支）。</p>
-<h2 id="repo-browser窗口"><a href="#repo-browser窗口" class="headerlink" title="repo browser窗口"></a>repo browser窗口</h2><p>直接在当前窗口查看不同commit的内容，不需要变动Working-Tree。</p>
-<h2 id="Commit-窗口"><a href="#Commit-窗口" class="headerlink" title="Commit 窗口"></a>Commit 窗口</h2><p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/8.jpg" alt="在这里插入图片描述"></p>
-<p><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/2021012721065440.png" alt="在这里插入图片描述">  </p>
-<p>这里ReCommit表示完成此次提交后不关闭当前窗口，可进行下一次提交。（与amend last commit不同）<br><img src="/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/20210127210814143.png" alt="在这里插入图片描述"><br>Set author<br>Set author date 在Message中添加作者和日期。<br>Amend Last Commit （git commit –amend 修改上次提交）  </p>
-]]></content>
-      <tags>
-        <tag>TortoiseGit</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>命令行中git log图介绍</title>
-    <url>/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/</url>
-    <content><![CDATA[<h1 id="命令行中git-log图介绍"><a href="#命令行中git-log图介绍" class="headerlink" title="命令行中git log图介绍"></a>命令行中git log图介绍</h1><p>写在前面：使用git时，一直看不懂log图，现在将从最基本的提交开始，了解git log图。本文内容十分基础</p>
-<h2 id="如何阅读git-log图（十分基础）"><a href="#如何阅读git-log图（十分基础）" class="headerlink" title="如何阅读git log图（十分基础）"></a>如何阅读git log图（十分基础）</h2><p>查看日志</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git log --oneline --graph &#x2F;&#x2F;可以使用alias gl&#x3D;...</span><br></pre></td></tr></table></figure>
-
-
-<p>进行第一次提交，然后查看日志</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/Snipaste_2021-01-30_13-34-22.png"></p>
-<p>进行第二次提交</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130134246367.png" alt="image-20210130134246367"></p>
-<p>创建develop分支，进行一次提交</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130134823778.png" alt="image-20210130134823778"></p>
-<p>从图中可以看出，共有三次提交。最新的提交显示在最上方。在first commit后产生了分叉。（git本身并没有主次分支的区分，数据以object的方式保存，分支指针指向某个object）</p>
-<p>再进行多次提交</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130135129027.png" alt="image-20210130135129027"></p>
-<p>从图中可以看出，HEAD指向develop分支，develop有多次提交，这里“线性提交”没有使用竖线、斜线表示。</p>
-<p>创建new_branch分支，进行一次提交</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130135445416.png" alt="image-20210130135445416"></p>
-<p>从图中可以看出，HEAD指向new_branch分支，new_branch分支只有两次提交。一个星号表示一次提交，连线表示提交之间的关系，如果是“线性提交”，则省略连线。</p>
-<p>又对分支做了修改</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130140224010.png" alt="image-20210130140224010"></p>
-<p>连线颜色更换，在stack overflow上查询颜色更换的原因。</p>
-<blockquote>
-<p><a href="https://stackoverflow.com/questions/40675151/what-do-line-colors-in-git-log-graph-mean">https://stackoverflow.com/questions/40675151/what-do-line-colors-in-git-log-graph-mean</a></p>
-<p>The colors are merely meant to help you view the lines as distinct from other lines. To answer question #1, they are assigned not pseudo-randomly, but rather <em>sequentially</em>, each time <code>git log --graph</code> picks a new “column number”. Unfortunately there are two issues I know of. Both tie into your question #2.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">GIT_COLOR_RED,</span><br><span class="line">GIT_COLOR_GREEN,</span><br><span class="line">GIT_COLOR_YELLOW,</span><br><span class="line">GIT_COLOR_BLUE,</span><br><span class="line">GIT_COLOR_MAGENTA,</span><br><span class="line">GIT_COLOR_CYAN,</span><br><span class="line">GIT_COLOR_BOLD_RED,</span><br><span class="line">GIT_COLOR_BOLD_GREEN,</span><br><span class="line">GIT_COLOR_BOLD_YELLOW,</span><br><span class="line">GIT_COLOR_BOLD_BLUE,</span><br><span class="line">GIT_COLOR_BOLD_MAGENTA,</span><br><span class="line">GIT_COLOR_BOLD_CYAN,</span><br></pre></td></tr></table></figure>
-
-
-</blockquote>
-<p>连线颜色只是为了区分开不同线条，颜色按顺序分配。</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130142953917.png" alt="image-20210130142953917"></p>
-]]></content>
       <tags>
         <tag>git</tag>
       </tags>
