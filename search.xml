@@ -258,6 +258,12 @@
       </tags>
   </entry>
   <entry>
+    <title>github-actions测试</title>
+    <url>/2021-01-30-github-actions%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>测试github actions</p>
+]]></content>
+  </entry>
+  <entry>
     <title>命令行中git log图介绍</title>
     <url>/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h1 id="命令行中git-log图介绍"><a href="#命令行中git-log图介绍" class="headerlink" title="命令行中git log图介绍"></a>命令行中git log图介绍</h1><p>写在前面：使用git时，一直看不懂log图，现在将从最基本的提交开始，了解git log图。本文内容十分基础</p>
