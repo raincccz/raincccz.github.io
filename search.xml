@@ -139,14 +139,14 @@
 <p>高级，用来设置文本格式</p>
 <p><img src="/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/image-20210130174605336.png" alt="image-20210130174605336"></p>
 <p>高级，修改文本格式常用快捷键：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;C-K&gt;+&lt;C-C&gt;注释</span><br><span class="line">&lt;C-K&gt;+&lt;C-U&gt;取消注释</span><br><span class="line">&#x2F;&#x2F; &lt;C-A&gt;表示 control+A 同时按下</span><br><span class="line">可能因为VS中快捷键过多，需要前导快捷键。保持control按下，然后按一下第一个字母，再按一下第二个字母，松开control键。</span><br><span class="line"></span><br><span class="line">前导快捷键有&lt;C-K&gt;，&lt;C-R&gt;，&lt;C-0&gt;，&lt;C-M&gt;。&lt;C-K&gt;一般用在编辑文本快捷键之前，&lt;C-R&gt;一般用在 测试功能的快捷键之前,&lt;C-0&gt;一般用在团队功能之前,&lt;C-M&gt;用于大纲显示的相关设置。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">&lt;C-K&gt;+&lt;C-C&gt;注释</span><br><span class="line">&lt;C-K&gt;+&lt;C-U&gt;取消注释</span><br><span class="line">// &lt;C-A&gt;表示 control+A 同时按下</span><br><span class="line">可能因为VS中快捷键过多，需要前导快捷键。保持control按下，然后按一下第一个字母，再按一下第二个字母，松开control键。</span><br><span class="line"></span><br><span class="line">前导快捷键有&lt;C-K&gt;，&lt;C-R&gt;，&lt;C-0&gt;，&lt;C-M&gt;。&lt;C-K&gt;一般用在编辑文本快捷键之前，&lt;C-R&gt;一般用在 测试功能的快捷键之前,&lt;C-0&gt;一般用在团队功能之前,&lt;C-M&gt;用于大纲显示的相关设置。</span><br></pre></td></tr></tbody></table></figure>
 
 
 <blockquote>
 <p>可以 参考VSCode快捷键的分析和助记（Windows）<a href="https://zhuanlan.zhihu.com/p/66826924">https://zhuanlan.zhihu.com/p/66826924</a></p>
 </blockquote>
 <p>Intellisense智能感知可以进行代码提示。如果要主动调出代码提示，使用以下快捷键：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;C-J&gt;或者&lt;A-右箭头&gt;  &#x2F;&#x2F;智能补全</span><br><span class="line">C+S+Space &#x2F;&#x2F;查看函数参数</span><br><span class="line">&lt;C-K&gt;+&lt;C-I&gt; &#x2F;&#x2F;查看具体信息</span><br><span class="line">&lt;C-K&gt;+&lt;C-S&gt; &#x2F;&#x2F;外侧代码片段</span><br><span class="line">&lt;C-K&gt;+&lt;C-X&gt; &#x2F;&#x2F;代码片段</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">&lt;C-J&gt;或者&lt;A-右箭头&gt;  //智能补全</span><br><span class="line">C+S+Space //查看函数参数</span><br><span class="line">&lt;C-K&gt;+&lt;C-I&gt; //查看具体信息</span><br><span class="line">&lt;C-K&gt;+&lt;C-S&gt; //外侧代码片段</span><br><span class="line">&lt;C-K&gt;+&lt;C-X&gt; //代码片段</span><br></pre></td></tr></tbody></table></figure>
 <p>外侧代码片段与代码片段功能</p>
 <blockquote>
 <p><a href="https://docs.microsoft.com/zh-cn/visualstudio/ide/code-snippets?view=vs-2019">https://docs.microsoft.com/zh-cn/visualstudio/ide/code-snippets?view=vs-2019</a></p>
@@ -279,7 +279,7 @@
     <url>/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h1 id="命令行中git-log图介绍"><a href="#命令行中git-log图介绍" class="headerlink" title="命令行中git log图介绍"></a>命令行中git log图介绍</h1><p>写在前面：使用git时，一直看不懂log图，现在将从最基本的提交开始，了解git log图。本文内容十分基础</p>
 <h2 id="如何阅读git-log图（十分基础）"><a href="#如何阅读git-log图（十分基础）" class="headerlink" title="如何阅读git log图（十分基础）"></a>如何阅读git log图（十分基础）</h2><p>查看日志</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git log --oneline --graph &#x2F;&#x2F;可以使用alias gl&#x3D;...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git log --oneline --graph //可以使用alias gl=...</span><br></pre></td></tr></tbody></table></figure>
 
 
 <p>进行第一次提交，然后查看日志</p>
@@ -301,7 +301,7 @@
 <blockquote>
 <p><a href="https://stackoverflow.com/questions/40675151/what-do-line-colors-in-git-log-graph-mean">https://stackoverflow.com/questions/40675151/what-do-line-colors-in-git-log-graph-mean</a></p>
 <p>The colors are merely meant to help you view the lines as distinct from other lines. To answer question #1, they are assigned not pseudo-randomly, but rather <em>sequentially</em>, each time <code>git log --graph</code> picks a new “column number”. Unfortunately there are two issues I know of. Both tie into your question #2.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">GIT_COLOR_RED,</span><br><span class="line">GIT_COLOR_GREEN,</span><br><span class="line">GIT_COLOR_YELLOW,</span><br><span class="line">GIT_COLOR_BLUE,</span><br><span class="line">GIT_COLOR_MAGENTA,</span><br><span class="line">GIT_COLOR_CYAN,</span><br><span class="line">GIT_COLOR_BOLD_RED,</span><br><span class="line">GIT_COLOR_BOLD_GREEN,</span><br><span class="line">GIT_COLOR_BOLD_YELLOW,</span><br><span class="line">GIT_COLOR_BOLD_BLUE,</span><br><span class="line">GIT_COLOR_BOLD_MAGENTA,</span><br><span class="line">GIT_COLOR_BOLD_CYAN,</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">GIT_COLOR_RED,</span><br><span class="line">GIT_COLOR_GREEN,</span><br><span class="line">GIT_COLOR_YELLOW,</span><br><span class="line">GIT_COLOR_BLUE,</span><br><span class="line">GIT_COLOR_MAGENTA,</span><br><span class="line">GIT_COLOR_CYAN,</span><br><span class="line">GIT_COLOR_BOLD_RED,</span><br><span class="line">GIT_COLOR_BOLD_GREEN,</span><br><span class="line">GIT_COLOR_BOLD_YELLOW,</span><br><span class="line">GIT_COLOR_BOLD_BLUE,</span><br><span class="line">GIT_COLOR_BOLD_MAGENTA,</span><br><span class="line">GIT_COLOR_BOLD_CYAN,</span><br></pre></td></tr></tbody></table></figure>
 
 
 </blockquote>
@@ -357,6 +357,15 @@
       </categories>
   </entry>
   <entry>
+    <title>信号与系统拾遗</title>
+    <url>/2021-02-01-%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%8B%BE%E9%81%97/</url>
+    <content><![CDATA[<p><img src="/images/cover/sunset-5928907_1920.jpg"></p>
+]]></content>
+      <tags>
+        <tag>信号与系统</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>git常用命令介绍及TortoiseGit、VS中git的使用</title>
     <url>/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="git常用命令介绍及TortoiseGit、VS中git的使用"><a href="#git常用命令介绍及TortoiseGit、VS中git的使用" class="headerlink" title="git常用命令介绍及TortoiseGit、VS中git的使用"></a>git常用命令介绍及TortoiseGit、VS中git的使用</h1><p>标准用法请参考<a href="https://git-scm.com/book/zh">git-scm</a>和man手册。本文记录笔者对git的一些理解，如有错误，欢迎指正。  </p>
@@ -401,27 +410,27 @@
 </ol>
 <h3 id="1-git-add"><a href="#1-git-add" class="headerlink" title="1.git add"></a>1.git add</h3><ul>
 <li><p>add 添加文件到index  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">git add <span class="keyword">new</span>.txt  </span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">git add <span class="keyword">new</span>.txt  </span><br></pre></td></tr></tbody></table></figure>
 <h3 id="2-git-commit"><a href="#2-git-commit" class="headerlink" title="2.git commit"></a>2.git commit</h3></li>
 <li><p>commit 将当前index提交到Local Repository  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">git  commit  -m <span class="string">&quot;&lt;这里是commit的注释&gt;&quot;</span>  </span><br><span class="line">git  commit  -m <span class="string">&quot;&lt;这里是commit的注释&gt;&quot;</span> --allow-empty <span class="comment">//使用此命令学习git分支  </span></span><br><span class="line">git  commit  -m <span class="string">&quot;&lt;这里是commit的注释&gt;&quot;</span> --allow-empty-message -m <span class="string">&quot;&quot;</span> <span class="comment">//允许空注释  </span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">git  commit  -m <span class="string">"&lt;这里是commit的注释&gt;"</span>  </span><br><span class="line">git  commit  -m <span class="string">"&lt;这里是commit的注释&gt;"</span> --allow-empty <span class="comment">//使用此命令学习git分支  </span></span><br><span class="line">git  commit  -m <span class="string">"&lt;这里是commit的注释&gt;"</span> --allow-empty-message -m <span class="string">""</span> <span class="comment">//允许空注释  </span></span><br></pre></td></tr></tbody></table></figure>
 <p>git commit将当前index状态保存，即git commit不直接与工作目录交互</p>
 </li>
 </ul>
 <h3 id="3-git-checkout（checkout命令更接近底层）"><a href="#3-git-checkout（checkout命令更接近底层）" class="headerlink" title="3.git checkout（checkout命令更接近底层）"></a>3.git checkout（checkout命令更接近底层）</h3><ul>
 <li><p>checkout 修改HEAD指针 底层修改 ./git/HEAD  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">git checkout &lt;指定位置&gt; <span class="comment">//修改HEAD 指针到&lt;指定位置&gt;  </span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">git checkout &lt;指定位置&gt; <span class="comment">//修改HEAD 指针到&lt;指定位置&gt;  </span></span><br></pre></td></tr></tbody></table></figure>
 <h3 id="4-git-branch"><a href="#4-git-branch" class="headerlink" title="4.git branch"></a>4.git branch</h3></li>
 <li><p>branch 创建分支  </p>
 </li>
 </ul>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">git branch new_branch <span class="comment">//新建分支new_branch  </span></span><br><span class="line">git branch -a 显示所有分支</span><br><span class="line">git branch -r 查看远程分支名</span><br><span class="line">git branch --<span class="built_in">set</span>-upstream 本地分支名 &lt;远程主机名&gt;/&lt;远程分支名&gt; <span class="comment">//数据流向，从本地流向远程，从左向右</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">git branch new_branch <span class="comment">//新建分支new_branch  </span></span><br><span class="line">git branch -a 显示所有分支</span><br><span class="line">git branch -r 查看远程分支名</span><br><span class="line">git branch --<span class="built_in">set</span>-upstream 本地分支名 &lt;远程主机名&gt;/&lt;远程分支名&gt; <span class="comment">//数据流向，从本地流向远程，从左向右</span></span><br></pre></td></tr></tbody></table></figure>
 
 
 
 
 <h3 id="5-git-switch"><a href="#5-git-switch" class="headerlink" title="5.git switch"></a>5.git switch</h3><ul>
-<li>switch 修改HEAD指针，使其指向某个分支而不是某个结点  <figure class="highlight c"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">switch</span> &lt;分支&gt; <span class="comment">//切换到某个分支  </span></span><br><span class="line"><span class="comment">//switch与checkout的区别：  </span></span><br><span class="line"><span class="comment">//checkout功能更加底层，修改HEAD指针的内容，使其指向branch或者commit  </span></span><br><span class="line"><span class="comment">//switch只能指向分支  </span></span><br></pre></td></tr></table></figure>
+<li>switch 修改HEAD指针，使其指向某个分支而不是某个结点  <figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">git <span class="keyword">switch</span> &lt;分支&gt; <span class="comment">//切换到某个分支  </span></span><br><span class="line"><span class="comment">//switch与checkout的区别：  </span></span><br><span class="line"><span class="comment">//checkout功能更加底层，修改HEAD指针的内容，使其指向branch或者commit  </span></span><br><span class="line"><span class="comment">//switch只能指向分支  </span></span><br></pre></td></tr></tbody></table></figure>
 
 
 
@@ -440,7 +449,7 @@
 <blockquote>
 <p>完整内容请参考 <a href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6">git-scm</a></p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Commit1---Commit2</span><br><span class="line">       \--Commit3</span><br><span class="line">master-&gt;Commit1</span><br><span class="line">hotfix-&gt;Commit2</span><br><span class="line">issue-&gt;Commit3</span><br><span class="line">HEAD-&gt;master</span><br><span class="line"></span><br><span class="line">注：git中分支本质是指针，指针指向某个节点，这个节点及其所有的祖先节点构成了该分支内容。如C1&lt;-C2&lt;-C3（箭头方向与指针方向一致，这个表示法在其他位置还会用到）。master分支指向C2节点，C1与C2属于master分支，C3不属于master分支。不能认为与master分支上节点关联的内容就属于master分支（单向链表）</span><br><span class="line"></span><br><span class="line">git switch master</span><br><span class="line">&#x2F;&#x2F;将hotfix分支内容合并到master分支</span><br><span class="line"></span><br><span class="line">git merge hotfix &#x2F;&#x2F;快进（fast-forward）</span><br><span class="line">&#x2F;&#x2F;将issue分支内容合并到master分支</span><br><span class="line">git merge issue &#x2F;&#x2F;三方合并</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">Commit1---Commit2</span><br><span class="line">       \--Commit3</span><br><span class="line">master-&gt;Commit1</span><br><span class="line">hotfix-&gt;Commit2</span><br><span class="line">issue-&gt;Commit3</span><br><span class="line">HEAD-&gt;master</span><br><span class="line"></span><br><span class="line">注：git中分支本质是指针，指针指向某个节点，这个节点及其所有的祖先节点构成了该分支内容。如C1&lt;-C2&lt;-C3（箭头方向与指针方向一致，这个表示法在其他位置还会用到）。master分支指向C2节点，C1与C2属于master分支，C3不属于master分支。不能认为与master分支上节点关联的内容就属于master分支（单向链表）</span><br><span class="line"></span><br><span class="line">git switch master</span><br><span class="line">//将hotfix分支内容合并到master分支</span><br><span class="line"></span><br><span class="line">git merge hotfix //快进（fast-forward）</span><br><span class="line">//将issue分支内容合并到master分支</span><br><span class="line">git merge issue //三方合并</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
 
 <p>当前工作再branch_master分支，此分支指向commitA，develop分支指向commitB,(AB字母仅供标识，没有其他含义）。使用指令<code>git merge develop</code>,创建一个新的commitC，commitC以commitA和commitB为父结点。再次强调，git的分支是一个指针，存放在./git/refs文件夹下。分支所包含的结点是以类似链表的方式的进行查找的，并不是线性记录在某个文件中。  </p>
@@ -458,7 +467,7 @@
 <h3 id="2-git-reset"><a href="#2-git-reset" class="headerlink" title="2.git reset"></a>2.git reset</h3><ul>
 <li>reset 修改当前分支的指针 底层修改文件 ./git/refs/head/&lt;分支名&gt;  </li>
 </ul>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">git reset ad13f1 <span class="comment">//修改当前分支的指针  </span></span><br><span class="line"><span class="comment">//git reset与checkout的区别  </span></span><br><span class="line"><span class="comment">//git reset不修改HEAD指针，修改当前分支指向的commit  </span></span><br><span class="line"><span class="comment">//git checkout修改HEAD指针  </span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">git reset ad13f1 <span class="comment">//修改当前分支的指针  </span></span><br><span class="line"><span class="comment">//git reset与checkout的区别  </span></span><br><span class="line"><span class="comment">//git reset不修改HEAD指针，修改当前分支指向的commit  </span></span><br><span class="line"><span class="comment">//git checkout修改HEAD指针  </span></span><br></pre></td></tr></tbody></table></figure>
 <p>git中删除分支并不会直接删除commit object，不过分支指针丢失了，难以进行查找，并且git有gc垃圾回收机制，会清理悬挂对象。（git误操作后恢复数据原理，分支指针被清除，对象并未清除，而且在./git/logs文件夹内有日志。) git fsck 命令验证数据库中对象的连通性和有效性。  </p>
 <p>修改当前分支指向的结点（分支指针总是指向该分支的最后一个结点，或者说分支指针记录了该分支最后一个结点，checkout命令是移动HEAD指针）  </p>
 <p>当前master分支有commitA commitB commitC  </p>
@@ -472,7 +481,7 @@
 <p>在git merge后，如果是三方合并，历史时间线中会显示分叉（如图）</p>
 <p><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/Snipaste_2021-01-29_17-43-24.png"></p>
 <p>这时可以使用rebase命令，</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase &lt;basebranch&gt; &lt;topicbranch&gt; 将topic分支的修改应用到base分支</span><br><span class="line">git rebase &lt;basebranch&gt; 将当前分支的修改应用到base分支上</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git rebase &lt;basebranch&gt; &lt;topicbranch&gt; 将topic分支的修改应用到base分支</span><br><span class="line">git rebase &lt;basebranch&gt; 将当前分支的修改应用到base分支上</span><br></pre></td></tr></tbody></table></figure>
 <p>注意：</p>
 <ol>
 <li>不要混淆topic分支和base分支</li>
@@ -481,14 +490,14 @@
 </ol>
 <h3 id="5-git-cherry-pick"><a href="#5-git-cherry-pick" class="headerlink" title="5.git cherry-pick"></a>5.git cherry-pick</h3><p>Apply the changes introduced by some existing commits 应用一些现有提交引入的更改</p>
 <p>merge rebase cherry-pick命令是基于修改，类似补丁的方式，并不是产生一份一模一样的副本。git并不会直接增量保存修改，而是产生独立的提交（具体请参考git内部原理分析），然后再不定期压缩数据库。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git cherry-pick &lt;commitHash&gt;</span><br><span class="line">git cherry-pick &lt;分支名&gt; &#x2F;&#x2F;相当于使用分支的最新提交</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git cherry-pick &lt;commitHash&gt;</span><br><span class="line">git cherry-pick &lt;分支名&gt; //相当于使用分支的最新提交</span><br></pre></td></tr></tbody></table></figure>
 
 
 
 
 
 
-<h3 id="6-git-stash"><a href="#6-git-stash" class="headerlink" title="6.git stash"></a>6.git stash</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git stash list  </span><br><span class="line">git stash show  &lt;stash&gt;</span><br><span class="line">git stash drop  &lt;stash&gt;</span><br><span class="line">git stash push [-u|--include-untracked] [-a|--all] [-k|--[no-]keep-index]</span><br><span class="line">git stash ( pop | apply ) [--index] [-q|--quiet] &lt;stash&gt; [--index]</span><br><span class="line">git stash clear</span><br></pre></td></tr></table></figure>
+<h3 id="6-git-stash"><a href="#6-git-stash" class="headerlink" title="6.git stash"></a>6.git stash</h3><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git stash list  </span><br><span class="line">git stash show  &lt;stash&gt;</span><br><span class="line">git stash drop  &lt;stash&gt;</span><br><span class="line">git stash push [-u|--include-untracked] [-a|--all] [-k|--[no-]keep-index]</span><br><span class="line">git stash ( pop | apply ) [--index] [-q|--quiet] &lt;stash&gt; [--index]</span><br><span class="line">git stash clear</span><br></pre></td></tr></tbody></table></figure>
 <p>-u|–include-untracked 包括未跟踪的文件</p>
 <h2 id="git-网络指令"><a href="#git-网络指令" class="headerlink" title="git 网络指令"></a>git 网络指令</h2><ol>
 <li><p>git clone</p>
@@ -509,17 +518,17 @@
 <p>Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository (visible using <strong>git branch -r</strong>), and creates and checks out an initial branch that is forked from the cloned repository’s currently active branch.</p>
 </blockquote>
 <p>翻译：将存储库克隆到新创建的目录中，为克隆的存储库中的每个分支创建远程跟踪分支（使用<strong>git branch -r</strong>可见），并创建并签出从克隆的存储库当前活动分支派生的初始分支。</p>
-<h3 id="2-git-fetch"><a href="#2-git-fetch" class="headerlink" title="2.git fetch"></a>2.git fetch</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git fetch &lt;origin&lt;&#x2F;&lt;remote_branch&gt;</span><br><span class="line">&#x2F;&#x2F; &lt;origin&gt;为远程主机名 &lt;remote_branch&gt;为远程分支名</span><br></pre></td></tr></table></figure>
+<h3 id="2-git-fetch"><a href="#2-git-fetch" class="headerlink" title="2.git fetch"></a>2.git fetch</h3><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git fetch &lt;origin&lt;/&lt;remote_branch&gt;</span><br><span class="line">// &lt;origin&gt;为远程主机名 &lt;remote_branch&gt;为远程分支名</span><br></pre></td></tr></tbody></table></figure>
 <p>git fetch之后在本地创建远程分支指针</p>
 <p>注：这里的远程分支指针是存储在本地的一个文件，与远程仓库的分支不同。</p>
 <p>具体原理请参考git内部原理分析</p>
 <h3 id="3-git-push"><a href="#3-git-push" class="headerlink" title="3.git push"></a>3.git push</h3><p>git push 远程主机名 本地分支名:远程分支名</p>
 <p>（最开始学习时，尽量不要使用简写）</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git push &lt;远程主机名origin&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt; &#x2F;&#x2F;origin是远程主机名，不要混淆远程主机名与远程分支名</span><br><span class="line">git push origin &#x2F;&#x2F;在有绑定关系时，可省略分支名，Git现在默认推送当前分支</span><br><span class="line">git push 如果只有一个远程主机，那么主机名也可以省略</span><br><span class="line">git push -u 指定默认主机</span><br><span class="line">git branch -</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git push &lt;远程主机名origin&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt; //origin是远程主机名，不要混淆远程主机名与远程分支名</span><br><span class="line">git push origin //在有绑定关系时，可省略分支名，Git现在默认推送当前分支</span><br><span class="line">git push 如果只有一个远程主机，那么主机名也可以省略</span><br><span class="line">git push -u 指定默认主机</span><br><span class="line">git branch -</span><br></pre></td></tr></tbody></table></figure>
 
 
 <h3 id="4-git-pull"><a href="#4-git-pull" class="headerlink" title="4.git pull"></a>4.git pull</h3><p><strong>git pull</strong> 命令用于从远程获取代码并合并本地的版本。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git pull &lt;远程主机名origin&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git pull &lt;远程主机名origin&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</span><br></pre></td></tr></tbody></table></figure>
 
 
 <p>注意</p>
@@ -528,7 +537,7 @@
 <li>不建议使用git pull指令。应用git fetch与git merge指令替代</li>
 <li>git push git pull指令中  分支流向为从左向右，左边分支数据流向右边分支</li>
 </ol>
-<h3 id="5-git-remote"><a href="#5-git-remote" class="headerlink" title="5.git remote"></a>5.git remote</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git remote -v &#x2F;&#x2F;显示本地关联的远程仓库</span><br><span class="line">git remote add &lt;shortname&gt; &lt;url&gt; &#x2F;&#x2F;shortname记为origin</span><br></pre></td></tr></table></figure>
+<h3 id="5-git-remote"><a href="#5-git-remote" class="headerlink" title="5.git remote"></a>5.git remote</h3><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git remote -v //显示本地关联的远程仓库</span><br><span class="line">git remote add &lt;shortname&gt; &lt;url&gt; //shortname记为origin</span><br></pre></td></tr></tbody></table></figure>
 
 
 
@@ -543,7 +552,7 @@
 <ol>
 <li><p>Working-Tree 即工作文件夹  </p>
 </li>
-<li><p>index index区内容，注意这里不是空的，使用git add <file1>命令，将file1添加到object和index内。<br>git commit区域 git commit将index内容打包到tree obejct，建立commit object，修改当前分支的指针，在logs文件夹内写入HEAD和当前分支的变更日志。  </p>
+<li><p>index index区内容，注意这里不是空的，使用git add <file1>命令，将file1添加到object和index内。<br>git commit区域 git commit将index内容打包到tree obejct，建立commit object，修改当前分支的指针，在logs文件夹内写入HEAD和当前分支的变更日志。  </file1></p>
 </li>
 <li><p>在git中，数据存放在以sha1为键名的数据库中，以链表方式组织数据。这样数据更加灵活。  </p>
 </li>
@@ -645,12 +654,12 @@
 </ol>
 <p>注：47d2739ba2c34690248c8f91b84bb54e8936899a为内容的sha1，实际上objects文件夹为数据库，sha1与内容构成了键值对，按照&lt;前2位sha1&gt;/&lt;后38位sha1&gt;的方式存储。  </p>
 <p>注：将文件提交到index后，new.txt文件的内容已经被保存到了数据库中。即git add的作用并不是仅对文件做标记，而是将其内容保存到数据库中。可以将其分解为底层命令git hash-object，并未保存树对象<br>4.提交index到Local Repo  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;First Commit&quot;</span>  </span><br></pre></td></tr></table></figure>
-<p><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/20210127200438711.png" alt="在这里插入图片描述"><br>此时，查看objects文件夹的内容<br><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/2.jpg" alt="在这里插入图片描述"><br>新增了5d/ d4/文件夹<br>查看5d文件夹下新增文件的内容<br>使用<code>git cat-file -p &lt;sha1&gt;</code>指令查看新增objects的内容<br>使用<code>git cat-file -t</code><sha1> 指令查看新增objects的类型<br><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/20210127200959354.png" alt="在这里插入图片描述"><br>查看d4文件夹下新增文件的内容<br><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/3.jpg" alt="在这里插入图片描述"><br>查看refs/heads文件夹<br><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/20210127201353609.png" alt="在这里插入图片描述"><br>查看master文件的内容<br><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/20210127201415714.png" alt="在这里插入图片描述"><br>发现其内容与新增的commit object的sha1一致。  </p>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">git commit -m <span class="string">"First Commit"</span>  </span><br></pre></td></tr></tbody></table></figure>
+<p><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/20210127200438711.png" alt="在这里插入图片描述"><br>此时，查看objects文件夹的内容<br><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/2.jpg" alt="在这里插入图片描述"><br>新增了5d/ d4/文件夹<br>查看5d文件夹下新增文件的内容<br>使用<code>git cat-file -p &lt;sha1&gt;</code>指令查看新增objects的内容<br>使用<code>git cat-file -t</code><sha1> 指令查看新增objects的类型<br><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/20210127200959354.png" alt="在这里插入图片描述"><br>查看d4文件夹下新增文件的内容<br><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/3.jpg" alt="在这里插入图片描述"><br>查看refs/heads文件夹<br><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/20210127201353609.png" alt="在这里插入图片描述"><br>查看master文件的内容<br><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/20210127201415714.png" alt="在这里插入图片描述"><br>发现其内容与新增的commit object的sha1一致。  </sha1></p>
 <p>总结：使用git commit指令后 objects内新增两个文件，分别为tree object，commit object。refs/heads文件夹内分支指针内容被改写。  </p>
 <ol start="5">
 <li>查看当前HEAD指针的内容，HEAD指针指向了master分支<br>注：HEAD 与heads不同<br><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/20210127194030173.png" alt="在这里插入图片描述">  </li>
-<li>继续测试，使用<code>git commit --allow-empty -m &quot;empty commit&quot;</code>指令进行一次空提交<br>注：使用windows下软件everything 可以查看新增加的文件<br>以下文件的修改时间与刚才的操作时间匹配<br><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/202101272019081.png" alt="在这里插入图片描述"><br>分别为：  </li>
+<li>继续测试，使用<code>git commit --allow-empty -m "empty commit"</code>指令进行一次空提交<br>注：使用windows下软件everything 可以查看新增加的文件<br>以下文件的修改时间与刚才的操作时间匹配<br><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/202101272019081.png" alt="在这里插入图片描述"><br>分别为：  </li>
 </ol>
 <ul>
 <li>./refs/heads/master  </li>
