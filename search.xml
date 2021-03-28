@@ -4,7 +4,7 @@
     <title>VS中git介绍</title>
     <url>/2021-01-30-2021-01-29-VS%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<p>本文仅介绍基本使用方法，详尽内容请参考官方文档。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 
 <h2 id="状态栏的中git"><a href="#状态栏的中git" class="headerlink" title="状态栏的中git"></a>状态栏的中git</h2><p>这是状态栏的选项卡，可快速查看分支状态。箭头图标表示本地仓库和远程仓库的差异，铅笔图标表示本地修改文件的数量。git图标表示git仓库名称。分叉图标表示当前分支的名称。</p>
@@ -46,7 +46,7 @@
     <title>TortoiseGit介绍</title>
     <url>/2021-01-30-TortoiseGit%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<p>本文内容非常基础，记录笔者学习过程。若要详尽学习TortoiseGit，请查看<a href="https://tortoisegit.org/docs/tortoisegit/">官方文档</a>。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 
 <h2 id="学习指导"><a href="#学习指导" class="headerlink" title="学习指导"></a>学习指导</h2><p>要从底层理解Git工作原理，将高层指令细分了若干低层操作。Git指令过多，且指令效果复杂，如果把Git当作黑箱，则有些功能难以理解。从Git的基本工作原理入手 </p>
@@ -112,7 +112,7 @@
     <title>Visual Studio的一些设置</title>
     <url>/2021-01-30-Visual%20Studio%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/</url>
     <content><![CDATA[<p>本文介绍一些VS中的常用功能及常用设置</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h1 id="vs解决方案、项目"><a href="#vs解决方案、项目" class="headerlink" title="vs解决方案、项目"></a>vs解决方案、项目</h1><blockquote>
 <p><a href="https://docs.microsoft.com/zh-cn/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2019">https://docs.microsoft.com/zh-cn/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2019</a></p>
@@ -151,11 +151,13 @@
 <figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">&lt;C-K&gt;+&lt;C-C&gt;注释</span><br><span class="line">&lt;C-K&gt;+&lt;C-U&gt;取消注释</span><br><span class="line">// &lt;C-A&gt;表示 control+A 同时按下</span><br><span class="line">可能因为VS中快捷键过多，需要前导快捷键。保持control按下，然后按一下第一个字母，再按一下第二个字母，松开control键。</span><br><span class="line"></span><br><span class="line">前导快捷键有&lt;C-K&gt;，&lt;C-R&gt;，&lt;C-0&gt;，&lt;C-M&gt;。&lt;C-K&gt;一般用在编辑文本快捷键之前，&lt;C-R&gt;一般用在 测试功能的快捷键之前,&lt;C-0&gt;一般用在团队功能之前,&lt;C-M&gt;用于大纲显示的相关设置。</span><br></pre></td></tr></tbody></table></figure>
 
 
+
 <blockquote>
 <p>可以 参考VSCode快捷键的分析和助记（Windows）<a href="https://zhuanlan.zhihu.com/p/66826924">https://zhuanlan.zhihu.com/p/66826924</a></p>
 </blockquote>
 <p>Intellisense智能感知可以进行代码提示。如果要主动调出代码提示，使用以下快捷键：</p>
 <figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">&lt;C-J&gt;或者&lt;A-右箭头&gt;  //智能补全</span><br><span class="line">C+S+Space //查看函数参数</span><br><span class="line">&lt;C-K&gt;+&lt;C-I&gt; //查看具体信息</span><br><span class="line">&lt;C-K&gt;+&lt;C-S&gt; //外侧代码片段</span><br><span class="line">&lt;C-K&gt;+&lt;C-X&gt; //代码片段</span><br></pre></td></tr></tbody></table></figure>
+
 <p>外侧代码片段与代码片段功能</p>
 <blockquote>
 <p><a href="https://docs.microsoft.com/zh-cn/visualstudio/ide/code-snippets?view=vs-2019">https://docs.microsoft.com/zh-cn/visualstudio/ide/code-snippets?view=vs-2019</a></p>
@@ -287,11 +289,12 @@
     <title>命令行中git log图介绍</title>
     <url>/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h1 id="命令行中git-log图介绍"><a href="#命令行中git-log图介绍" class="headerlink" title="命令行中git log图介绍"></a>命令行中git log图介绍</h1><p>写在前面：使用git时，一直看不懂log图，现在将从最基本的提交开始，了解git log图。本文内容十分基础</p>
-<a id="more"></a>
+<span id="more"></span>
 
 
 <h2 id="如何阅读git-log图（十分基础）"><a href="#如何阅读git-log图（十分基础）" class="headerlink" title="如何阅读git log图（十分基础）"></a>如何阅读git log图（十分基础）</h2><p>查看日志</p>
 <figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git log --oneline --graph //可以使用alias gl=...</span><br></pre></td></tr></tbody></table></figure>
+
 
 
 <p>进行第一次提交，然后查看日志</p>
@@ -331,7 +334,7 @@
     <title>查询技术性资料的一些经验</title>
     <url>/2021-01-30-%E6%9F%A5%E8%AF%A2%E6%8A%80%E6%9C%AF%E6%80%A7%E8%B5%84%E6%96%99%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C/</url>
     <content><![CDATA[<p>官方参考文档具有权威性，内容及时更新，但内容往往过于专业，文章较冗长。私人博客内容比较精炼，通俗易懂，一般只涉及常用的知识，但内容不会及时更新，且可能会存在一些错误。在初步学习时，可参考私人博客内容，遇到有争议性的问题时，查阅官方参考文档。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="个人查询文档的一些经验："><a href="#个人查询文档的一些经验：" class="headerlink" title="个人查询文档的一些经验："></a>个人查询文档的一些经验：</h2><p>文档类型主要有：</p>
 <ul>
@@ -375,16 +378,92 @@
     <title>信号与系统拾遗</title>
     <url>/2021-02-01-%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%8B%BE%E9%81%97/</url>
     <content><![CDATA[<p><img src="/images/cover/sunset-5928907_1920.jpg"></p>
+<p>待更新</p>
 ]]></content>
       <tags>
         <tag>信号与系统</tag>
       </tags>
   </entry>
   <entry>
+    <title>zotero配置指南</title>
+    <url>/2021-03-28-%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<p>（待续）</p>
+<p>zotero是开源的文献管理软件，并且可以实现跨平台同步。由安德鲁·w·梅隆基金会，斯隆基金会以及美国博物馆和图书馆服务协会资助开发。下面将介绍一种便捷的zotero配置方法。</p>
+<span id="more"></span>
+
+<h2 id="使用到的软件"><a href="#使用到的软件" class="headerlink" title="使用到的软件"></a>使用到的软件</h2><ol>
+<li>Zotero</li>
+<li>Jasminum插件（根据pdf名称抓取知网元数据）</li>
+<li>zotfile插件（pdf重命名</li>
+<li>Chrome Zotero插件（用来抓取元数据和论文）</li>
+<li>CN-translator（用来适配不同的论文网站）</li>
+<li>坚果云webdav</li>
+<li>ios端 papership</li>
+</ol>
+<h2 id="zotero文件同步方式："><a href="#zotero文件同步方式：" class="headerlink" title="zotero文件同步方式："></a>zotero文件同步方式：</h2><ol>
+<li><p>zotero官方同步</p>
+</li>
+<li><p>存储库网盘同步</p>
+</li>
+<li><p>第三方webdav同步</p>
+</li>
+<li><p>外部文件网盘同步</p>
+</li>
+<li><p>混合使用</p>
+<p>本文推荐使用第三方webdav同步，配置简单、逻辑清晰并且可以实现跨平台pdf同步</p>
+</li>
+</ol>
+<h2 id="zotero的基本配置"><a href="#zotero的基本配置" class="headerlink" title="zotero的基本配置"></a>zotero的基本配置</h2><ol>
+<li><p>安装zotero <a href="https://www.zotero.org/download">https://www.zotero.org/download</a> 具体步骤略</p>
+</li>
+<li><p>注册zotero账号并登录</p>
+</li>
+<li><p>安装zotero for browser插件，便于从知网、谷歌学术、百度学术抓取数据</p>
+</li>
+<li><p>注册坚果云账号 <a href="https://www.jianguoyun.com/#/%EF%BC%88%E6%AF%8F%E4%B8%AA%E6%9C%88%E6%9C%89%E5%85%8D%E8%B4%B9%E6%B5%81%E9%87%8F%EF%BC%89">https://www.jianguoyun.com/#/（每个月有免费流量）</a></p>
+</li>
+<li><p>zotero连接坚果云的webdav 具体步骤略</p>
+</li>
+<li><p>安装Jasminum <a href="https://github.com/l0o0/jasminum/releases/">https://github.com/l0o0/jasminum/releases/</a> </p>
+</li>
+<li><p>安装zotfile插件 <a href="https://github.com/jlegewie/zotfile/releases">https://github.com/jlegewie/zotfile/releases</a></p>
+</li>
+<li><p>安装zotero for chrome浏览器插件</p>
+</li>
+<li><p>下载Zotero translators 中文 <a href="https://github.com/l0o0/translators_cn%EF%BC%8C%E5%B0%86js%E8%A7%A3%E5%8E%8B%E5%88%B0%E7%9B%B8%E5%BA%94%E7%9B%AE%E5%BD%95%EF%BC%8C%E5%BA%94%E7%94%A8%E9%85%8D%E7%BD%AE">https://github.com/l0o0/translators_cn，将js解压到相应目录，应用配置</a></p>
+</li>
+<li><p>ios端下载papership并配置webdav</p>
+</li>
+</ol>
+<h2 id="使用流程"><a href="#使用流程" class="headerlink" title="使用流程"></a>使用流程</h2><ol>
+<li>获取文献<ul>
+<li>zotero for chrome插件自动抓取元信息及pdf</li>
+<li>zotero for chrome抓取元信息，手动下载pdf后手动关联</li>
+<li>zotero for chrome抓取元信息，下载pdf到zotfile inbox文件夹后使用zotfile添加附件</li>
+<li>手动下载pdf，使用Jasminum插件从知网抓取元信息</li>
+</ul>
+</li>
+<li>添加GB/T引文格式</li>
+</ol>
+<h2 id="效果预览"><a href="#效果预览" class="headerlink" title="效果预览"></a>效果预览</h2><p>web端效果</p>
+<p><img src="/2021-03-28-%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/Snipaste_2021-03-28_21-03-24.png"><br>pc端效果</p>
+<p><img src="/2021-03-28-%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/Snipaste_2021-03-28_21-03-00.png"></p>
+<p>ipad端效果</p>
+<p><img src="/2021-03-28-%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/QQ%E5%9B%BE%E7%89%8720210328210147.png"></p>
+<p>参考资料</p>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/31453719">https://zhuanlan.zhihu.com/p/31453719</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>tools</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>git常用命令介绍及TortoiseGit、VS中git的使用</title>
     <url>/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>本文将介绍git的原理以及基本指令的使用，使读者理解git的工作方式。最后将介绍如何在TortoiseGit和Visual Studio使用git。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 
 
@@ -441,19 +520,22 @@
 </li>
 </ul>
 <h3 id="3-git-checkout（checkout命令更接近底层）"><a href="#3-git-checkout（checkout命令更接近底层）" class="headerlink" title="3.git checkout（checkout命令更接近底层）"></a>3.git checkout（checkout命令更接近底层）</h3><ul>
-<li><p>checkout 修改HEAD指针 底层修改 ./git/HEAD  </p>
-<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">git checkout &lt;指定位置&gt; <span class="comment">//修改HEAD 指针到&lt;指定位置&gt;  </span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="4-git-branch"><a href="#4-git-branch" class="headerlink" title="4.git branch"></a>4.git branch</h3></li>
-<li><p>branch 创建分支  </p>
+<li>checkout 修改HEAD指针 底层修改 ./git/HEAD  <figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">git checkout &lt;指定位置&gt; <span class="comment">//修改HEAD 指针到&lt;指定位置&gt;  </span></span><br></pre></td></tr></tbody></table></figure>
+
 </li>
+</ul>
+<h3 id="4-git-branch"><a href="#4-git-branch" class="headerlink" title="4.git branch"></a>4.git branch</h3><ul>
+<li>branch 创建分支  </li>
 </ul>
 <figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">git branch new_branch <span class="comment">//新建分支new_branch  </span></span><br><span class="line">git branch -a 显示所有分支</span><br><span class="line">git branch -r 查看远程分支名</span><br><span class="line">git branch --<span class="built_in">set</span>-upstream 本地分支名 &lt;远程主机名&gt;/&lt;远程分支名&gt; <span class="comment">//数据流向，从本地流向远程，从左向右</span></span><br></pre></td></tr></tbody></table></figure>
 
 
 
 
+
 <h3 id="5-git-switch"><a href="#5-git-switch" class="headerlink" title="5.git switch"></a>5.git switch</h3><ul>
 <li>switch 修改HEAD指针，使其指向某个分支而不是某个结点  <figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">git <span class="keyword">switch</span> &lt;分支&gt; <span class="comment">//切换到某个分支  </span></span><br><span class="line"><span class="comment">//switch与checkout的区别：  </span></span><br><span class="line"><span class="comment">//checkout功能更加底层，修改HEAD指针的内容，使其指向branch或者commit  </span></span><br><span class="line"><span class="comment">//switch只能指向分支  </span></span><br></pre></td></tr></tbody></table></figure>
+
 
 
 
@@ -475,6 +557,7 @@
 <figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">Commit1---Commit2</span><br><span class="line">       \--Commit3</span><br><span class="line">master-&gt;Commit1</span><br><span class="line">hotfix-&gt;Commit2</span><br><span class="line">issue-&gt;Commit3</span><br><span class="line">HEAD-&gt;master</span><br><span class="line"></span><br><span class="line">注：git中分支本质是指针，指针指向某个节点，这个节点及其所有的祖先节点构成了该分支内容。如C1&lt;-C2&lt;-C3（箭头方向与指针方向一致，这个表示法在其他位置还会用到）。master分支指向C2节点，C1与C2属于master分支，C3不属于master分支。不能认为与master分支上节点关联的内容就属于master分支（单向链表）</span><br><span class="line"></span><br><span class="line">git switch master</span><br><span class="line">//将hotfix分支内容合并到master分支</span><br><span class="line"></span><br><span class="line">git merge hotfix //快进（fast-forward）</span><br><span class="line">//将issue分支内容合并到master分支</span><br><span class="line">git merge issue //三方合并</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
 
+
 <p>当前工作再branch_master分支，此分支指向commitA，develop分支指向commitB,(AB字母仅供标识，没有其他含义）。使用指令<code>git merge develop</code>,创建一个新的commitC，commitC以commitA和commitB为父结点。再次强调，git的分支是一个指针，存放在./git/refs文件夹下。分支所包含的结点是以类似链表的方式的进行查找的，并不是线性记录在某个文件中。  </p>
 <p>merge的两种方式</p>
 <ul>
@@ -491,6 +574,7 @@
 <li>reset 修改当前分支的指针 底层修改文件 ./git/refs/head/&lt;分支名&gt;  </li>
 </ul>
 <figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line">git reset ad13f1 <span class="comment">//修改当前分支的指针  </span></span><br><span class="line"><span class="comment">//git reset与checkout的区别  </span></span><br><span class="line"><span class="comment">//git reset不修改HEAD指针，修改当前分支指向的commit  </span></span><br><span class="line"><span class="comment">//git checkout修改HEAD指针  </span></span><br></pre></td></tr></tbody></table></figure>
+
 <p>git中删除分支并不会直接删除commit object，不过分支指针丢失了，难以进行查找，并且git有gc垃圾回收机制，会清理悬挂对象。（git误操作后恢复数据原理，分支指针被清除，对象并未清除，而且在./git/logs文件夹内有日志。) git fsck 命令验证数据库中对象的连通性和有效性。  </p>
 <p>修改当前分支指向的结点（分支指针总是指向该分支的最后一个结点，或者说分支指针记录了该分支最后一个结点，checkout命令是移动HEAD指针）  </p>
 <p>当前master分支有commitA commitB commitC  </p>
@@ -505,6 +589,7 @@
 <p><img src="/2021-01-29-git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D%E5%8F%8ATortoiseGit%E3%80%81VS%E4%B8%ADgit%E7%9A%84%E4%BD%BF%E7%94%A8/Snipaste_2021-01-29_17-43-24.png"></p>
 <p>这时可以使用rebase命令，</p>
 <figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git rebase &lt;basebranch&gt; &lt;topicbranch&gt; 将topic分支的修改应用到base分支</span><br><span class="line">git rebase &lt;basebranch&gt; 将当前分支的修改应用到base分支上</span><br></pre></td></tr></tbody></table></figure>
+
 <p>注意：</p>
 <ol>
 <li>不要混淆topic分支和base分支</li>
@@ -520,7 +605,9 @@
 
 
 
+
 <h3 id="6-git-stash"><a href="#6-git-stash" class="headerlink" title="6.git stash"></a>6.git stash</h3><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git stash list  </span><br><span class="line">git stash show  &lt;stash&gt;</span><br><span class="line">git stash drop  &lt;stash&gt;</span><br><span class="line">git stash push [-u|--include-untracked] [-a|--all] [-k|--[no-]keep-index]</span><br><span class="line">git stash ( pop | apply ) [--index] [-q|--quiet] &lt;stash&gt; [--index]</span><br><span class="line">git stash clear</span><br></pre></td></tr></tbody></table></figure>
+
 <p>-u|–include-untracked 包括未跟踪的文件</p>
 <h2 id="git-网络指令"><a href="#git-网络指令" class="headerlink" title="git 网络指令"></a>git 网络指令</h2><ol>
 <li><p>git clone</p>
@@ -542,6 +629,7 @@
 </blockquote>
 <p>翻译：将存储库克隆到新创建的目录中，为克隆的存储库中的每个分支创建远程跟踪分支（使用<strong>git branch -r</strong>可见），并创建并签出从克隆的存储库当前活动分支派生的初始分支。</p>
 <h3 id="2-git-fetch"><a href="#2-git-fetch" class="headerlink" title="2.git fetch"></a>2.git fetch</h3><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git fetch &lt;origin&lt;/&lt;remote_branch&gt;</span><br><span class="line">// &lt;origin&gt;为远程主机名 &lt;remote_branch&gt;为远程分支名</span><br></pre></td></tr></tbody></table></figure>
+
 <p>git fetch之后在本地创建远程分支指针</p>
 <p>注：这里的远程分支指针是存储在本地的一个文件，与远程仓库的分支不同。</p>
 <p>具体原理请参考git内部原理分析</p>
@@ -550,8 +638,10 @@
 <figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git push &lt;远程主机名origin&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt; //origin是远程主机名，不要混淆远程主机名与远程分支名</span><br><span class="line">git push origin //在有绑定关系时，可省略分支名，Git现在默认推送当前分支</span><br><span class="line">git push 如果只有一个远程主机，那么主机名也可以省略</span><br><span class="line">git push -u 指定默认主机</span><br><span class="line">git branch -</span><br></pre></td></tr></tbody></table></figure>
 
 
+
 <h3 id="4-git-pull"><a href="#4-git-pull" class="headerlink" title="4.git pull"></a>4.git pull</h3><p><strong>git pull</strong> 命令用于从远程获取代码并合并本地的版本。</p>
 <figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git pull &lt;远程主机名origin&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</span><br></pre></td></tr></tbody></table></figure>
+
 
 
 <p>注意</p>
@@ -561,6 +651,7 @@
 <li>git push git pull指令中  分支流向为从左向右，左边分支数据流向右边分支</li>
 </ol>
 <h3 id="5-git-remote"><a href="#5-git-remote" class="headerlink" title="5.git remote"></a>5.git remote</h3><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">git remote -v //显示本地关联的远程仓库</span><br><span class="line">git remote add &lt;shortname&gt; &lt;url&gt; //shortname记为origin</span><br></pre></td></tr></tbody></table></figure>
+
 
 
 
