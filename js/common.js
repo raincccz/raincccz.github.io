@@ -54,11 +54,3 @@ window.$claudia = {
         callback && callback(media.matches ? 'dark' : 'light')
     }
 }
-
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?f42b031136a2e318102eeb8074c68825";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
