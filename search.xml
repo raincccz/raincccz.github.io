@@ -287,7 +287,7 @@
   </entry>
   <entry>
     <title>命令行中git log图介绍</title>
-    <url>/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/</url>
+    <url>/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%20log%E5%9B%BE%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h1 id="命令行中git-log图介绍"><a href="#命令行中git-log图介绍" class="headerlink" title="命令行中git log图介绍"></a>命令行中git log图介绍</h1><p>写在前面：使用git时，一直看不懂log图，现在将从最基本的提交开始，了解git log图。本文内容十分基础</p>
 <span id="more"></span>
 
@@ -298,20 +298,20 @@
 
 
 <p>进行第一次提交，然后查看日志</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/Snipaste_2021-01-30_13-34-22.png"></p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%20log%E5%9B%BE%E4%BB%8B%E7%BB%8D/Snipaste_2021-01-30_13-34-22.png"></p>
 <p>进行第二次提交</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130134246367.png" alt="image-20210130134246367"></p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%20log%E5%9B%BE%E4%BB%8B%E7%BB%8D/image-20210130134246367.png" alt="image-20210130134246367"></p>
 <p>创建develop分支，进行一次提交</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130134823778.png" alt="image-20210130134823778"></p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%20log%E5%9B%BE%E4%BB%8B%E7%BB%8D/image-20210130134823778.png" alt="image-20210130134823778"></p>
 <p>从图中可以看出，共有三次提交。最新的提交显示在最上方。在first commit后产生了分叉。（git本身并没有主次分支的区分，数据以object的方式保存，分支指针指向某个object）</p>
 <p>再进行多次提交</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130135129027.png" alt="image-20210130135129027"></p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%20log%E5%9B%BE%E4%BB%8B%E7%BB%8D/image-20210130135129027.png" alt="image-20210130135129027"></p>
 <p>从图中可以看出，HEAD指向develop分支，develop有多次提交，这里“线性提交”没有使用竖线、斜线表示。</p>
 <p>创建new_branch分支，进行一次提交</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130135445416.png" alt="image-20210130135445416"></p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%20log%E5%9B%BE%E4%BB%8B%E7%BB%8D/image-20210130135445416.png" alt="image-20210130135445416"></p>
 <p>从图中可以看出，HEAD指向new_branch分支，new_branch分支只有两次提交。一个星号表示一次提交，连线表示提交之间的关系，如果是“线性提交”，则省略连线。</p>
 <p>又对分支做了修改</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130140224010.png" alt="image-20210130140224010"></p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%20log%E5%9B%BE%E4%BB%8B%E7%BB%8D/image-20210130140224010.png" alt="image-20210130140224010"></p>
 <p>连线颜色更换，在stack overflow上查询颜色更换的原因。</p>
 <blockquote>
 <p><a href="https://stackoverflow.com/questions/40675151/what-do-line-colors-in-git-log-graph-mean">https://stackoverflow.com/questions/40675151/what-do-line-colors-in-git-log-graph-mean</a></p>
@@ -321,7 +321,7 @@
 
 </blockquote>
 <p>连线颜色只是为了区分开不同线条，颜色按顺序分配。</p>
-<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%E4%BB%8B%E7%BB%8D/image-20210130142953917.png" alt="image-20210130142953917"></p>
+<p><img src="/2021-01-30-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%ADgit%20log%E5%9B%BE%E4%BB%8B%E7%BB%8D/image-20210130142953917.png" alt="image-20210130142953917"></p>
 ]]></content>
       <categories>
         <category>小文</category>
@@ -385,8 +385,8 @@
       </tags>
   </entry>
   <entry>
-    <title>zotero配置指南</title>
-    <url>/2021-03-28-%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
+    <title>zotero配置指南-文献管理</title>
+    <url>/2021-03-28-zotero%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97-%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<p>（待续）</p>
 <p>zotero是开源的文献管理软件，并且可以实现跨平台同步。由安德鲁·w·梅隆基金会，斯隆基金会以及美国博物馆和图书馆服务协会资助开发。下面将介绍一种便捷的zotero配置方法。</p>
 <span id="more"></span>
@@ -446,10 +446,10 @@
 <li>添加GB/T引文格式</li>
 </ol>
 <h2 id="效果预览"><a href="#效果预览" class="headerlink" title="效果预览"></a>效果预览</h2><p>web端效果</p>
-<p><img src="/2021-03-28-%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/Snipaste_2021-03-28_21-03-24.png"><br>pc端效果</p>
-<p><img src="/2021-03-28-%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/Snipaste_2021-03-28_21-03-00.png"></p>
+<p><img src="/2021-03-28-zotero%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97-%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/Snipaste_2021-03-28_21-03-24.png"><br>pc端效果</p>
+<p><img src="/2021-03-28-zotero%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97-%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/Snipaste_2021-03-28_21-03-00.png"></p>
 <p>ipad端效果</p>
-<p><img src="/2021-03-28-%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/QQ%E5%9B%BE%E7%89%8720210328210147.png"></p>
+<p><img src="/2021-03-28-zotero%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97-%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/QQ%E5%9B%BE%E7%89%8720210328210147.png"></p>
 <p>参考资料</p>
 <ul>
 <li><a href="https://zhuanlan.zhihu.com/p/31453719">https://zhuanlan.zhihu.com/p/31453719</a></li>
@@ -458,6 +458,21 @@
       <tags>
         <tag>tools</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>tex使用指南</title>
+    <url>/2021-03-31-tex%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<p>参考链接：<a href="https://zhuanlan.zhihu.com/p/56982388">https://zhuanlan.zhihu.com/p/56982388</a></p>
+<p>核心内容：<a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/">https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/</a></p>
+<p>解压后安装，使用TeXworks editor编辑器修改</p>
+<p>TeX可以使用git进行版本控制，推荐使用github统一管理所有git文档，或者管理单个项目文档。</p>
+<p>代码示例</p>
+<figure class="highlight latex"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[UTF8]{ctexart}</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>{document}</span><br><span class="line"></span><br><span class="line"><span class="keyword">\section</span>{中文} 中文</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>{document}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>基础语法参见：<a href="https://zhuanlan.zhihu.com/p/52347414">https://zhuanlan.zhihu.com/p/52347414</a></p>
+<p>详细语法参见：<a href="https://www.latex-project.org/help/documentation/">https://www.latex-project.org/help/documentation/</a></p>
+<p>pdf教程：<a href="http://www.mohu.org/info/lshort-cn.pdf">http://www.mohu.org/info/lshort-cn.pdf</a></p>
+]]></content>
   </entry>
   <entry>
     <title>git常用命令介绍及TortoiseGit、VS中git的使用</title>
