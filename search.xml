@@ -460,12 +460,16 @@
       </tags>
   </entry>
   <entry>
-    <title>tex使用指南</title>
+    <title>TeX使用指南</title>
     <url>/2021-03-31-tex%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[<p>参考链接：<a href="https://zhuanlan.zhihu.com/p/56982388">https://zhuanlan.zhihu.com/p/56982388</a></p>
 <p>核心内容：<a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/">https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/</a></p>
 <p>解压后安装，使用TeXworks editor编辑器修改</p>
 <p>TeX可以使用git进行版本控制，推荐使用github统一管理所有git文档，或者管理单个项目文档。</p>
+<span id="more"></span>
+
+
+
 <p>代码示例</p>
 <figure class="highlight latex"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[UTF8]{ctexart}</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>{document}</span><br><span class="line"></span><br><span class="line"><span class="keyword">\section</span>{中文} 中文</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>{document}</span><br></pre></td></tr></tbody></table></figure>
 
